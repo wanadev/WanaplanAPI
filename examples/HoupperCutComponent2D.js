@@ -383,8 +383,8 @@ var HoupperCutComponent2D = (function() {
             B = this._B;
 
 
-        var As = API.e2D.toRealCoord(A, translation, zoom),
-            Bs = API.e2D.toRealCoord(B, translation, zoom);
+        var As = API.e2D.toRealCoord( A ),
+            Bs = API.e2D.toRealCoord( B );
 
         ctx.save();
 
