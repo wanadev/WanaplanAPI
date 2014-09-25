@@ -8,7 +8,6 @@ var wnp = window.wnp || {};
 wnp.Programmable = wnp.Programmable || {};
 
 wnp.Programmable.RoundedSphere = (function () {
-    var that;
     
     /**
      * A programmable which create a sphere
@@ -17,13 +16,11 @@ wnp.Programmable.RoundedSphere = (function () {
      * @class RoundedSphere
      */
     var P = function (engine, structure, params) {
+        
+        // super call
         wnp.Programmable.call(this, engine, structure, params);
-        for (var i in params) {
-            this[i] = params[i];
-        }
+       
         this.objectName = 'RoundedSphere';
-        structure.magnetismCollider = wnp.Constants.MAGNETISM.WALL | wnp.Constants.MAGNETISM.VERTICAL;
-        structure.preferredYAngle = Math.PI;
     };
 
     // inheritence
