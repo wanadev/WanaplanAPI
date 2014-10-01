@@ -60,8 +60,8 @@ var HoupperCutComponent2D = (function() {
     };
 
     /**
-     * inject the button into the menu
-     * the button will throw specific event when pressed
+     * Inject the button into the menu.
+     * The button will throw specific event when pressed.
      *
      *
      * @method _injectButton
@@ -83,7 +83,7 @@ var HoupperCutComponent2D = (function() {
     };
 
     /**
-     * build the _handlers set, which contains the event handlers binded to the instance
+     * Build the _handlers set, which contains the event handlers binded to the instance.
      *
      *
      * @method _initHandlers
@@ -112,11 +112,11 @@ var HoupperCutComponent2D = (function() {
     };
 
     /**
-     * Append a new hopper to the floorStructure
+     * Append a new hopper to the floorStructure.
      *
      * @method buildHopper
-     * @param polygon          {Array of BABYLON.Vector2} the polygon which describe the hopper
-     * @param [floorStructure] {FloorStructure}   the floorStructure, default is the current one
+     * @param polygon          {Array of BABYLON.Vector2} The polygon which describe the hopper.
+     * @param [floorStructure] {FloorStructure}   The floorStructure, default is the current one
      */
     C.prototype.buildHopper = function(polygon, floorStructure) {
 

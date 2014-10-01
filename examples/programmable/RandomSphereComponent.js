@@ -41,7 +41,7 @@ var RandomSphereComponent = (function() {
             'RoundedSphere.js' ,
 
             // url to the file
-            'http://localhost/Programmable/' ,
+            'js/Core/Api/examples/Programmable/' ,
 
             // tranformation params
             {
