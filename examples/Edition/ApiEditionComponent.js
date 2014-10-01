@@ -16,16 +16,16 @@ var ApiEditionComponent = (function() {
     comp.prototype = new BaseComponent3D();
 
     comp.prototype.initialize = function() {
-        API.e3D.addWidget("http://localhost/wanaplan/js/core/Api/widget/Move.js","Move")
+        API.e3D.addWidget("path/Move.js","Move");
         this.startListening();
     };
 
     comp.prototype.startListening = function() {
-        document.addEventListener("wnp.engine3D.click", this.onClick, false);
+        API.listen("wnp.engine3D.click", this.onClick);
     };
 
     comp.prototype.stopListening = function() {
-        document.removeEventListener("wnp.engine3D.click", this.onClick, false);
+        API.unListen("wnp.engine3D.click", this.onClick);
     };
 
     comp.prototype.onClick = function(event) {
