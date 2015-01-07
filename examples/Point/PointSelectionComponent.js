@@ -23,8 +23,8 @@ var PointSelectionComponent = (function() {
     var comp = function(core) {
         BaseComponent2D.call(this, core, 'PointSelectionComponent');
 
-        // Less priority than the Wall and PointComponent, to keep the classic behaviour
-        this.priority = 9;
+        // High priority
+        this.priority = 999;
 
         // For the selection rectangle
         this.currentCursorPos = null;
@@ -50,7 +50,12 @@ var PointSelectionComponent = (function() {
 
         // Symbols helper
         this.symbols2D = null;
-
+        
+        // Base Component
+        this.ptCmp2D = null;
+        this.dragStartClassic = null;
+        this.draggingClassic = null;
+        
         return this;
     };
 
@@ -58,6 +63,10 @@ var PointSelectionComponent = (function() {
 
     comp.prototype.initialize = function() {
         this.symbols2D = API.e2D.getSymbols2D();
+        
+        // The original behaviour
+        this.ptCmp2D = API.getComponent("PointComponent2D");
+        this.dragStartClassic = this.ptCmp2D.onDragStart;
     };
 
     comp.prototype.startListening = function() {
@@ -179,20 +188,30 @@ var PointSelectionComponent = (function() {
         API.e2D.requestDynamicDraw();
     };
     comp.prototype.onDragStart = function(event, target, mstate, data) {
+        var pointTargeted = this.ptCmp2D.getTargeted(API.e2D.getMousePos());
+        if (this.selectedPoints.length === 0 && pointTargeted) {
+            // The events "dragging" and"drag-end" will automatically be piped to PointComponent2D
+            this.dragStartClassic.call(this.ptCmp2D, event, pointTargeted, mstate, data);
+            return false;
+        }
+        
+        // Pipe the events onto this component
         wanaplan.engine2D.registerEventCb("PointSelectionComponent.dragging", this.priority, "dragging", wanaplan.engine2D.MODE_DRAG, null, this.onDragging.bind(this), target);
         wanaplan.engine2D.registerEventCb("PointSelectionComponent.drag-end", this.priority, "drag-end", wanaplan.engine2D.MODE_DRAG, null, this.onDragEnd.bind(this), target);
-
-        if (!this.pointDragging) {
-            // We are not dragging a point, we must set up a rectangle selection
-            this.purgeSelection();
-            this.origin = mstate.planPos.clone();
-            this.currentCursorPos = mstate.planPos.clone();
-        }
-        else {
+          
+        if (this.selectedPoints.length !== 0 && pointTargeted) {
+             this.pointDragging = true;
             // We are dragging the selected points, we must reset the rectangle selection
             this.origin = null;
+            
+            return false;
         }
-
+        
+        // We are not dragging a point, we must set up a rectangle selection
+        this.purgeSelection();
+        this.origin = mstate.planPos.clone();
+        this.currentCursorPos = mstate.planPos.clone();
+        
         return false;
     };
 
@@ -227,46 +246,4 @@ var PointSelectionComponent = (function() {
 
     return comp;
 
-})();
-
-/************************
- * Substitution example *
- ************************/
-
- // NB : The proper to handle events in this case are
- // to set a bigger priority on your own component and
- // delegate events to native components.
-
- // But for the sake of the example, we are doing it the ugly way.
-
-(function(){
-
-    var dragStartClassic = PointComponent2D.prototype.onDragStart;
-    var draggingClassic = PointComponent2D.prototype.onDragging;
-    var PSC;
-
-    PointComponent2D.prototype.onDragStart = function(event, target, mstate, data) {
-        PSC = PSC || API.getComponent('PointSelectionComponent');
-
-        // If no points have been selected, keep the original behaviour
-        if (PSC.selectedPoints.length === 0) {
-            dragStartClassic.call(this, event, target, mstate, data);
-            return false;
-        }
-
-        PSC.pointDragging = true;
-        PSC.onDragStart(event, target, mstate, data)
-    };
-
-    PointComponent2D.prototype.onDragging = function(event, target, mstate, data) {
-        PSC = PSC || API.getComponent('PointSelectionComponent');
-
-        // If no points have been selected, keep the original behaviour
-        if (PSC.selectedPoints.length === 0) {
-            draggingClassic.call(this, event, target, mstate, data);
-            return false;
-        }
-
-        PSC.onDragging(event, target, mstate, data)
-    };
 })();
