@@ -30,8 +30,8 @@ var HoupperCutComponent2D = (function() {
 
 
     C.prototype.initialize = function() {
-        this.startListening();
         this._injectButton();
+        this.startListening();
     };
 
     var PolygonFragment = function(polygon) {
