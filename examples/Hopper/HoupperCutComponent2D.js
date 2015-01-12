@@ -32,7 +32,7 @@ var HoupperCutComponent2D = (function() {
     C.prototype.initialize = function() {
 
         this._injectButton();
-
+        this.startListening();
     };
 
     var PolygonFragment = function(polygon) {
@@ -193,8 +193,8 @@ var HoupperCutComponent2D = (function() {
             this._initHandlers();
 
         // remove event listeners
-        API.unlisten('wnp.request.houperCut.start', this._handlers.requestStart);
-        API.unlisten('wnp.request.houperCut.stop', this._handlers.requestStop);
+        API.unListen('wnp.request.houperCut.start', this._handlers.requestStart);
+        API.unListen('wnp.request.houperCut.stop', this._handlers.requestStop);
     };
 
     /////////////////////////////////////
