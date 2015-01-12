@@ -59,6 +59,7 @@ var WallPaneMassEditor = (function() {
         if (event.params.diffuseTexture) {
             this.UI.img.src = event.params.diffuseTexture;
         } else {
+            var ctx = this.UI.imageContainer.getContext('2d');
             ctx.fillStyle =
                 'rgb(' + Math.round(event.color.r * 255) +
                 ',' + Math.round(event.color.g * 255) +
