@@ -39,7 +39,7 @@ var RoomExampleComponent = (function() {
     comp.prototype.initialize = function() {
         // This event must be listened at all times
         this.onRoomsUpdated = this.onRoomsUpdated.bind(this);
-        document.addEventListener('wnp.engine3d.roomsReady', this.onRoomsUpdated, false);
+        document.addEventListener('wnp.engine3D.roomsReady', this.onRoomsUpdated, false);
     };
 
     comp.prototype.startListening = function() {
@@ -66,9 +66,6 @@ var RoomExampleComponent = (function() {
         if (pickingInfo && pickingInfo.hit) {
             var newSelected = pickingInfo.pickedMesh.subMeshes[pickingInfo.pickedSubMeshIndex].objectInstance;
 
-            // We do nothing if the room is already selected
-            if (newSelected === this.selectedRoom)
-                return;
             this.selectedRoom = newSelected;
 
             // The mesh name is "RoomMesh_X" where X is the floor ID.
