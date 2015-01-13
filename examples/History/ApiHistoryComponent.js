@@ -4,6 +4,14 @@
  */
 
 var ApiHistoryComponent = (function() {
+    /**
+     * ApiHistoryComponent stores history of camera changes (first person to orbit)
+     * and therefore allows to undo/redo camera change
+     *
+     * @class ApiHistoryComponent
+     * @constructor
+     * @extends BaseComponent3D
+     */
 
     this.CAMERACHANGEDACTION = 0;
 
