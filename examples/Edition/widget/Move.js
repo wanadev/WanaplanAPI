@@ -1,6 +1,6 @@
 /**
  * @module Wanaplan
- * move widget for scene objects
+ * Leaves a green box at last position when moving an object
  */
 
 var wnp = window.wnp || {};
@@ -19,9 +19,9 @@ wnp.Widget.Move = (function () {
         _edcmp = edcmp;
         that = this;
 
-        edcmp.on('deselectObject', this.onDeselectObject);
-        edcmp.on('mousedown', this.onMouseDown);
-        edcmp.on('mouseup', this.onMouseUp);
+        _edcmp.on('deselectObject', this.onDeselectObject);
+        _edcmp.on('mousedown', this.onMouseDown);
+        _edcmp.on('mouseup', this.onMouseUp);
     }
 
     move.prototype.onDeselectObject = function () {
@@ -51,7 +51,8 @@ wnp.Widget.Move = (function () {
         var bbox = mesh.getBoundingBox(true);
         var size = bbox.maximum.subtract(bbox.minimum);
         _moveMesh = BABYLON.Mesh.CreateBloc("move", size.x, size.y, size.z, API.e3D.getScene());
-        _moveMesh.position = _lastPosition;
+        var elevation = API.getCurrentFloor().elevation + size.y / 2;
+        _moveMesh.position = _lastPosition.add(new BABYLON.Vector3(0, elevation, 0));
         _moveMesh.rotation = mesh.rotation;
         _moveMesh.material = API.material.PlasticMaterial("move", {baseColor : color});
         _moveMesh.material.alpha = 0.2;
