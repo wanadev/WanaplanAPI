@@ -4,7 +4,14 @@
  */
 
 var ApiInstanceComponent = (function() {
-
+    /**
+     * This component allows to copy the material of an object with the middle mouse button
+     * and apply it to another object the same way
+     * 
+     * @class ApiInstanceComponent
+     * @constructor
+     * @extends BaseComponent3D
+     */
     var comp = function(core) {
         BaseComponent3D.call(this, core, 'ApiInstanceComponent');
 
@@ -16,7 +23,6 @@ var ApiInstanceComponent = (function() {
     comp.prototype = new BaseComponent3D();
 
     comp.prototype.initialize = function() {
-        this.startListening();
     };
 
     comp.prototype.startListening = function() {
