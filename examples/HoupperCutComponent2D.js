@@ -30,9 +30,8 @@ var HoupperCutComponent2D = (function() {
 
 
     C.prototype.initialize = function() {
-
         this._injectButton();
-
+        this.startListening();
     };
 
     var PolygonFragment = function(polygon) {
@@ -60,8 +59,8 @@ var HoupperCutComponent2D = (function() {
     };
 
     /**
-     * inject the button into the menu
-     * the button will throw specific event when pressed
+     * Inject the button into the menu.
+     * The button will throw specific event when pressed.
      *
      *
      * @method _injectButton
@@ -83,7 +82,7 @@ var HoupperCutComponent2D = (function() {
     };
 
     /**
-     * build the _handlers set, which contains the event handlers binded to the instance
+     * Build the _handlers set, which contains the event handlers binded to the instance.
      *
      *
      * @method _initHandlers
@@ -112,11 +111,11 @@ var HoupperCutComponent2D = (function() {
     };
 
     /**
-     * Append a new hopper to the floorStructure
+     * Append a new hopper to the floorStructure.
      *
      * @method buildHopper
-     * @param polygon          {Array of BABYLON.Vector2} the polygon which describe the hopper
-     * @param [floorStructure] {FloorStructure}   the floorStructure, default is the current one
+     * @param polygon          {Array of BABYLON.Vector2} The polygon which describe the hopper.
+     * @param [floorStructure] {FloorStructure}   The floorStructure, default is the current one
      */
     C.prototype.buildHopper = function(polygon, floorStructure) {
 
@@ -193,8 +192,8 @@ var HoupperCutComponent2D = (function() {
             this._initHandlers();
 
         // remove event listeners
-        API.unlisten('wnp.request.houperCut.start', this._handlers.requestStart);
-        API.unlisten('wnp.request.houperCut.stop', this._handlers.requestStop);
+        API.unListen('wnp.request.houperCut.start', this._handlers.requestStart);
+        API.unListen('wnp.request.houperCut.stop', this._handlers.requestStop);
     };
 
     /////////////////////////////////////
@@ -383,8 +382,8 @@ var HoupperCutComponent2D = (function() {
             B = this._B;
 
 
-        var As = API.e2D.toRealCoord( A ),
-            Bs = API.e2D.toRealCoord( B );
+        var As = API.e2D.toRealCoord(A, translation, zoom),
+            Bs = API.e2D.toRealCoord(B, translation, zoom);
 
         ctx.save();
 
