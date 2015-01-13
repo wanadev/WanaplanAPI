@@ -10,7 +10,7 @@
 var ApiStairwayComponent = (function() {
 
     /**
-     * ApiStairwayComponent.
+     * ApiStairwayComponent automatically builds walls around each stairway we create
      *
      * @class ApiStairwayComponent
      * @constructor
