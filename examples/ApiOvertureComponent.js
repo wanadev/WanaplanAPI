@@ -6,7 +6,7 @@
 var ApiOvertureComponent = (function() {
 
     /**
-     * ApiOvertureComponent.
+     * ApiOvertureComponent adds an overture on the nearest wall at double click
      *
      * @class ApiOvertureComponent
      * @constructor
