@@ -6,7 +6,6 @@
  * @module Wanaplan
  * @submodule Component
  */
-
 var HoupperCutComponent2D = (function() {
 
     /**
