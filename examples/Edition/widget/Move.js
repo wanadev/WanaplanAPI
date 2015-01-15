@@ -19,9 +19,9 @@ wnp.Widget.Move = (function () {
         _edcmp = edcmp;
         that = this;
 
-        _edcmp.on('deselectObject', this.onDeselectObject);
-        _edcmp.on('mousedown', this.onMouseDown);
-        _edcmp.on('mouseup', this.onMouseUp);
+        edcmp.on('deselectObject', this.onDeselectObject);
+        edcmp.on('mousedown', this.onMouseDown);
+        edcmp.on('mouseup', this.onMouseUp);
     }
 
     move.prototype.onDeselectObject = function () {
