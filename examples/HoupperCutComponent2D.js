@@ -6,6 +6,7 @@
  * @module Wanaplan
  * @submodule Component
  */
+ 
 var HoupperCutComponent2D = (function() {
 
     /**
@@ -31,6 +32,7 @@ var HoupperCutComponent2D = (function() {
     C.prototype.initialize = function() {
         this._injectButton();
         this.startListening();
+
     };
 
     var PolygonFragment = function(polygon) {
