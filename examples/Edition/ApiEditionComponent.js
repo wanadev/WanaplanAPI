@@ -24,7 +24,7 @@ var ApiEditionComponent = (function() {
 
     comp.prototype.initialize = function() {
         //external widget that leaves trace when moving an object
-        API.e3D.addWidget("path/to/file/Move.js","Move")
+        API.e3D.addWidget("http://localhost/wanaplan/js/Core/Api/widget/Move.js","Move")
     };
 
     comp.prototype.startListening = function() {
@@ -37,15 +37,15 @@ var ApiEditionComponent = (function() {
 
     comp.prototype.onClick = function(event) {
         if (event.button !== 1) return;
-        API.e3D.deselectObject();
 
         var collided = event.collided;
         var objects = API.getObjects();
 
+        API.e3D.deselectObject();
         for (var i = 0; i < objects.length; i++) {
             API.e3D.addToGroup( objects[i].objectInstance );
         }
-
+        API.e3D.selectObject(collided.pickedMesh.getTopLevelObject());
     };
 
 
