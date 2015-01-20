@@ -1,34 +1,25 @@
-/**
- * @module Wanaplan
- * @namespace wnp
- * @submodule Programmable
- */
-
-var wnp = window.wnp || {};
-wnp.Programmable = wnp.Programmable || {};
-
 wnp.Programmable.RoundedSphere = (function () {
-    
+
     /**
-     * A programmable which create a sphere
+     * A programmable which creates a sphere
      *
      * @constructor
      * @class RoundedSphere
      */
     var P = function (engine, structure, params) {
-        
+
         // super call
         wnp.Programmable.call(this, engine, structure, params);
-       
+
         this.objectName = 'RoundedSphere';
     };
 
-    // inheritence
+    // inheritance
     for (var i in wnp.Programmable.prototype) {
         P.prototype[i] = wnp.Programmable.prototype[i];
     }
 
-    // return all the params used by the programmable, and theirs default values
+    // return all the params used by the programmable, and their default values
     P.prototype.getDefaultParams = function() {
         var params = {
             size : 10,
@@ -53,12 +44,12 @@ wnp.Programmable.RoundedSphere = (function () {
         return params;
     }
 
-    // this function help to define the type of each param
+    // this function helps to define the type of each param
     // this is useful in order to have a nice context menu,
     // a boolean for example is displayed as a toggle button
     P.prototype.getParamType = function( name ){
         switch( name ){
-            
+
             // the size param is a number
             case "size" :
                 return { 
@@ -80,7 +71,7 @@ wnp.Programmable.RoundedSphere = (function () {
 
     // return a set of labeled materials
     // each material is linked to a specific region 
-    // in this exemple, the sphere only containsone part, named main
+    // in this example, the sphere only contains one part, named main
     P.prototype.getDefaultMaterials = function(scene) {
         var materials = {};
 
@@ -92,7 +83,7 @@ wnp.Programmable.RoundedSphere = (function () {
 
     // build the mesh
     P.prototype.getObject3D = function(scene) {
-        
+
         // notice : the name of the mesh is main
         var sphere = BABYLON.Mesh.CreateSphere("main", 10 , this.params.size, scene);
 
