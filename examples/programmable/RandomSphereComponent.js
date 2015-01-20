@@ -60,9 +60,6 @@ var RandomSphereComponent = (function() {
            size : size,
         };
 
-        // grab the current floor
-        var floorStructure = API.getCurrentFloor();
-
         // callback
         var callback = function(){
             console.log( 'sphere added');
