@@ -1,0 +1,5616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>EditionComponent3D - wanaplan</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="wanaplan" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 2.7.3</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/AnalyticsComponent.html">AnalyticsComponent</a></li>
+                                <li><a href="../classes/API.html">API</a></li>
+                                <li><a href="../classes/API.e2D.html">API.e2D</a></li>
+                                <li><a href="../classes/API.e3D.html">API.e3D</a></li>
+                                <li><a href="../classes/API.html.html">API.html</a></li>
+                                <li><a href="../classes/API.material.html">API.material</a></li>
+                                <li><a href="../classes/API.ui.html">API.ui</a></li>
+                                <li><a href="../classes/API.utils.html">API.utils</a></li>
+                                <li><a href="../classes/AssimpImporter.html">AssimpImporter</a></li>
+                                <li><a href="../classes/AvatarComponent3D.html">AvatarComponent3D</a></li>
+                                <li><a href="../classes/BaseComponent2D.html">BaseComponent2D</a></li>
+                                <li><a href="../classes/BaseComponent3D.html">BaseComponent3D</a></li>
+                                <li><a href="../classes/BaseStructure.html">BaseStructure</a></li>
+                                <li><a href="../classes/BaseTopMenuComponent2D.html">BaseTopMenuComponent2D</a></li>
+                                <li><a href="../classes/CameraComponent.html">CameraComponent</a></li>
+                                <li><a href="../classes/ColladaExporter.html">ColladaExporter</a></li>
+                                <li><a href="../classes/ConfiguratorModComponent3D.html">ConfiguratorModComponent3D</a></li>
+                                <li><a href="../classes/Constants.html">Constants</a></li>
+                                <li><a href="../classes/Controls.html">Controls</a></li>
+                                <li><a href="../classes/DecorationComponent.html">DecorationComponent</a></li>
+                                <li><a href="../classes/DGM_LoadComponent.html">DGM_LoadComponent</a></li>
+                                <li><a href="../classes/DGM_SaveComponent.html">DGM_SaveComponent</a></li>
+                                <li><a href="../classes/DGM_ZoomComponent.html">DGM_ZoomComponent</a></li>
+                                <li><a href="../classes/DragComponent3D.html">DragComponent3D</a></li>
+                                <li><a href="../classes/Dummy.html">Dummy</a></li>
+                                <li><a href="../classes/EditionComponent3D.html">EditionComponent3D</a></li>
+                                <li><a href="../classes/EditMeasureComponent.html">EditMeasureComponent</a></li>
+                                <li><a href="../classes/EVENTS.html">EVENTS</a></li>
+                                <li><a href="../classes/ExitComponent.html">ExitComponent</a></li>
+                                <li><a href="../classes/ExporterComponent3D.html">ExporterComponent3D</a></li>
+                                <li><a href="../classes/ExporterHelper.html">ExporterHelper</a></li>
+                                <li><a href="../classes/FloorComponent3D.html">FloorComponent3D</a></li>
+                                <li><a href="../classes/FloorController.html">FloorController</a></li>
+                                <li><a href="../classes/FloorStructure.html">FloorStructure</a></li>
+                                <li><a href="../classes/FullscreenComponent.html">FullscreenComponent</a></li>
+                                <li><a href="../classes/GlobalHelper.html">GlobalHelper</a></li>
+                                <li><a href="../classes/GridComponent2D.html">GridComponent2D</a></li>
+                                <li><a href="../classes/GridComponent3D.html">GridComponent3D</a></li>
+                                <li><a href="../classes/GroupManager.html">GroupManager</a></li>
+                                <li><a href="../classes/HardwareScalingComponent3D.html">HardwareScalingComponent3D</a></li>
+                                <li><a href="../classes/HideAvatarComponent.html">HideAvatarComponent</a></li>
+                                <li><a href="../classes/HistoryComponent.html">HistoryComponent</a></li>
+                                <li><a href="../classes/HopperComponent2D.html">HopperComponent2D</a></li>
+                                <li><a href="../classes/HopperComponent3D.html">HopperComponent3D</a></li>
+                                <li><a href="../classes/HopperStructure.html">HopperStructure</a></li>
+                                <li><a href="../classes/Info.html">Info</a></li>
+                                <li><a href="../classes/KZShareComponent.html">KZShareComponent</a></li>
+                                <li><a href="../classes/LockComponent.html">LockComponent</a></li>
+                                <li><a href="../classes/Logger.html">Logger</a></li>
+                                <li><a href="../classes/MagnetismComponent2D.html">MagnetismComponent2D</a></li>
+                                <li><a href="../classes/MagnetismComponent3D.html">MagnetismComponent3D</a></li>
+                                <li><a href="../classes/MaterialInfo.html">MaterialInfo</a></li>
+                                <li><a href="../classes/MeasureComponent.html">MeasureComponent</a></li>
+                                <li><a href="../classes/MeasureStructure.html">MeasureStructure</a></li>
+                                <li><a href="../classes/MobileComponent.html">MobileComponent</a></li>
+                                <li><a href="../classes/MobileInputComponent.html">MobileInputComponent</a></li>
+                                <li><a href="../classes/MobileVRCamera.html">MobileVRCamera</a></li>
+                                <li><a href="../classes/MobileVRComponent.html">MobileVRComponent</a></li>
+                                <li><a href="../classes/NewComponent.html">NewComponent</a></li>
+                                <li><a href="../classes/ObjectComponent3D.html">ObjectComponent3D</a></li>
+                                <li><a href="../classes/ObjectHelper.html">ObjectHelper</a></li>
+                                <li><a href="../classes/ObjectHelper.AABB.html">ObjectHelper.AABB</a></li>
+                                <li><a href="../classes/ObjectHelper.collision.html">ObjectHelper.collision</a></li>
+                                <li><a href="../classes/ObjectHelper.Interval.html">ObjectHelper.Interval</a></li>
+                                <li><a href="../classes/ObjectHelper.OBB.html">ObjectHelper.OBB</a></li>
+                                <li><a href="../classes/ObjectHelper.OyBB.html">ObjectHelper.OyBB</a></li>
+                                <li><a href="../classes/ObjectStructure.html">ObjectStructure</a></li>
+                                <li><a href="../classes/OBJExporter.html">OBJExporter</a></li>
+                                <li><a href="../classes/OculusRiftCamera.html">OculusRiftCamera</a></li>
+                                <li><a href="../classes/OculusRiftComponent.html">OculusRiftComponent</a></li>
+                                <li><a href="../classes/OptionsComponent.html">OptionsComponent</a></li>
+                                <li><a href="../classes/OvertureComponent2D.html">OvertureComponent2D</a></li>
+                                <li><a href="../classes/OvertureComponent3D.html">OvertureComponent3D</a></li>
+                                <li><a href="../classes/OvertureStructure.html">OvertureStructure</a></li>
+                                <li><a href="../classes/PedagoComponent.html">PedagoComponent</a></li>
+                                <li><a href="../classes/PerformanceComponent2D.html">PerformanceComponent2D</a></li>
+                                <li><a href="../classes/PointComponent2D.html">PointComponent2D</a></li>
+                                <li><a href="../classes/PointStructure.html">PointStructure</a></li>
+                                <li><a href="../classes/PolygonWall.html">PolygonWall</a></li>
+                                <li><a href="../classes/RoofComponent2D.html">RoofComponent2D</a></li>
+                                <li><a href="../classes/RoofComponent3D.html">RoofComponent3D</a></li>
+                                <li><a href="../classes/RoofStructure.html">RoofStructure</a></li>
+                                <li><a href="../classes/RoomComponent2D.html">RoomComponent2D</a></li>
+                                <li><a href="../classes/RoomComponent3D.html">RoomComponent3D</a></li>
+                                <li><a href="../classes/RoomHierarchy.html">RoomHierarchy</a></li>
+                                <li><a href="../classes/RoomStructure.html">RoomStructure</a></li>
+                                <li><a href="../classes/Rotator.html">Rotator</a></li>
+                                <li><a href="../classes/SA_ConnectionStatusDetector.html">SA_ConnectionStatusDetector</a></li>
+                                <li><a href="../classes/SA_DatabaseManager.html">SA_DatabaseManager</a></li>
+                                <li><a href="../classes/SA_NewComponent.html">SA_NewComponent</a></li>
+                                <li><a href="../classes/SA_StorageManager.html">SA_StorageManager</a></li>
+                                <li><a href="../classes/SA_Timer.html">SA_Timer</a></li>
+                                <li><a href="../classes/SA_WebService.html">SA_WebService</a></li>
+                                <li><a href="../classes/ScreenshotMenuComponent.html">ScreenshotMenuComponent</a></li>
+                                <li><a href="../classes/SketchfabExporter.html">SketchfabExporter</a></li>
+                                <li><a href="../classes/SpiralStairwayStructure.html">SpiralStairwayStructure</a></li>
+                                <li><a href="../classes/StairwayComponent2D.html">StairwayComponent2D</a></li>
+                                <li><a href="../classes/StairwayComponent3D.html">StairwayComponent3D</a></li>
+                                <li><a href="../classes/StairwayStructure.html">StairwayStructure</a></li>
+                                <li><a href="../classes/StandaloneComponent.html">StandaloneComponent</a></li>
+                                <li><a href="../classes/STLExporter.html">STLExporter</a></li>
+                                <li><a href="../classes/StraightStairwayStructure.html">StraightStairwayStructure</a></li>
+                                <li><a href="../classes/SubSlopeComponent2D.html">SubSlopeComponent2D</a></li>
+                                <li><a href="../classes/SubSlopeComponent3D.html">SubSlopeComponent3D</a></li>
+                                <li><a href="../classes/SubSlopeOvertureComponent2D.html">SubSlopeOvertureComponent2D</a></li>
+                                <li><a href="../classes/SubSlopeOvertureStructure.html">SubSlopeOvertureStructure</a></li>
+                                <li><a href="../classes/SubSlopeStructure.html">SubSlopeStructure</a></li>
+                                <li><a href="../classes/SwimmingPoolComponent2D.html">SwimmingPoolComponent2D</a></li>
+                                <li><a href="../classes/SwimmingPoolComponent3D.html">SwimmingPoolComponent3D</a></li>
+                                <li><a href="../classes/SwimmingPoolStructure.html">SwimmingPoolStructure</a></li>
+                                <li><a href="../classes/TransformObjectComponent3D.html">TransformObjectComponent3D</a></li>
+                                <li><a href="../classes/TransparencyComponent.html">TransparencyComponent</a></li>
+                                <li><a href="../classes/UpdateNotification.html">UpdateNotification</a></li>
+                                <li><a href="../classes/WallComponent2D.html">WallComponent2D</a></li>
+                                <li><a href="../classes/WallComponent3D.html">WallComponent3D</a></li>
+                                <li><a href="../classes/WallPane3D.html">WallPane3D</a></li>
+                                <li><a href="../classes/WallStructure.html">WallStructure</a></li>
+                                <li><a href="../classes/wnp.AnimationCancelor.html">wnp.AnimationCancelor</a></li>
+                                <li><a href="../classes/wnp.Assimp2jsonImporter.html">wnp.Assimp2jsonImporter</a></li>
+                                <li><a href="../classes/wnp.CameraFeatures.html">wnp.CameraFeatures</a></li>
+                                <li><a href="../classes/wnp.GlassMaterial.html">wnp.GlassMaterial</a></li>
+                                <li><a href="../classes/wnp.ImageProcessor.html">wnp.ImageProcessor</a></li>
+                                <li><a href="../classes/wnp.Input.TouchManager.html">wnp.Input.TouchManager</a></li>
+                                <li><a href="../classes/wnp.KeyboardManager.html">wnp.KeyboardManager</a></li>
+                                <li><a href="../classes/wnp.LeatherMaterial.html">wnp.LeatherMaterial</a></li>
+                                <li><a href="../classes/wnp.LoopTimer.html">wnp.LoopTimer</a></li>
+                                <li><a href="../classes/wnp.MetalMaterial.html">wnp.MetalMaterial</a></li>
+                                <li><a href="../classes/wnp.Outliner.html">wnp.Outliner</a></li>
+                                <li><a href="../classes/wnp.PlasticMaterial.html">wnp.PlasticMaterial</a></li>
+                                <li><a href="../classes/wnp.PointerManager.html">wnp.PointerManager</a></li>
+                                <li><a href="../classes/wnp.Programmable.html">wnp.Programmable</a></li>
+                                <li><a href="../classes/wnp.StandardMaterial.html">wnp.StandardMaterial</a></li>
+                                <li><a href="../classes/wnp.Symbols2D.html">wnp.Symbols2D</a></li>
+                                <li><a href="../classes/wnp.TexturedMaterial.html">wnp.TexturedMaterial</a></li>
+                                <li><a href="../classes/wnp.TileMaterial.html">wnp.TileMaterial</a></li>
+                                <li><a href="../classes/wnp.uuid.html">wnp.uuid</a></li>
+                                <li><a href="../classes/wnp.WhiteMaterial.html">wnp.WhiteMaterial</a></li>
+                                <li><a href="../classes/wnp.WoodMaterial.html">wnp.WoodMaterial</a></li>
+                            </ul>
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/API.html">API</a></li>
+                                <li><a href="../modules/Component.html">Component</a></li>
+                                <li><a href="../modules/Core.html">Core</a></li>
+                                <li><a href="../modules/EVENTS.html">EVENTS</a></li>
+                                <li><a href="../modules/Events.html">Events</a></li>
+                                <li><a href="../modules/Helpers.html">Helpers</a></li>
+                                <li><a href="../modules/Input.html">Input</a></li>
+                                <li><a href="../modules/Kozikaza.html">Kozikaza</a></li>
+                                <li><a href="../modules/Materials.html">Materials</a></li>
+                                <li><a href="../modules/Programmable.html">Programmable</a></li>
+                                <li><a href="../modules/Rendering.html">Rendering</a></li>
+                                <li><a href="../modules/Wanaplan.html">Wanaplan</a></li>
+                                <li><a href="../modules/Widget.html">Widget</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>EditionComponent3D Class</h1>
+<div class="box meta">
+
+        <div class="extends">
+            Extends <a href="../classes/Controls.html" class="crosslink">Controls</a>
+        </div>
+
+
+            Module: <a href="../modules/Component.html">Component</a><br>
+            Parent Module: <a href="../modules/Wanaplan.html">Wanaplan</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Component managing the user-guided edition of the 3D scene.
+Manages all interactions involving modifications of the scene's geometry.
+Necessary when the scene can be edited by the user.</p>
+<blockquote>
+<p>For instance, in viewer mode, this component is inactive.</p>
+</blockquote>
+<p>This component sends internal events when an object is manipulated, which can be listened to by the widgets for example.
+To set/remove a callback for one of these events, use the functions <code>on</code> and <code>off</code> of this component (see Controls for the declaration).
+Here is the list of all events you can set callbacks to, and the type of the argument provided to the callback :</p>
+<ul>
+<li>deselectObject (no argument)</li>
+<li>dispose (BABYLON.Mesh)</li>
+<li>refresh (BABYLON.Mesh)</li>
+<li>selectObject (BABYLON.Mesh)</li>
+<li>special (MouseEvent)</li>
+</ul>
+
+</div>
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+<div id="method_EditionComponent3D" class="method item">
+    <h3 class="name"><code>EditionComponent3D</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>core</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">core</code>
+                        <span class="type">wnp.Core</span>
+
+
+                    <div class="param-description">
+                        <p>Wanaplan Core.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+    </div>
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
+            <li class="api-class-tab events"><a href="#events">Events</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods extends">
+                            <li class="index-item method inherited">
+                                <a href="#method_addDraggable">addDraggable</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_addHistory">addHistory</a>
+
+                            </li>
+                            <li class="index-item method private deprecated inherited">
+                                <a href="#method_addUnremovableDraggable">addUnremovableDraggable</a>
+
+                                    <span class="flag deprecated">deprecated</span>
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_addWidget">addWidget</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_clickSelection">clickSelection</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_constrains">constrains</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_deselect">deselect</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_disableWidget">disableWidget</a>
+
+                            </li>
+                            <li class="index-item method inherited inherited">
+                                <a href="#method_dragLock">dragLock</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_dragSelection">dragSelection</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_EnableWidget">EnableWidget</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_getDragged">getDragged</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_getLastPosition">getLastPosition</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_getPointerCoordinates">getPointerCoordinates</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_getReferentParent">getReferentParent</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_getReferentPlane">getReferentPlane</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_getRoot">getRoot</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_getSelected">getSelected</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_getSelectedObject">getSelectedObject</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_historyDelete">historyDelete</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_historyRefresh">historyRefresh</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_isLocked">isLocked</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_isSelectableObject">isSelectableObject</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_isSelectableOverture">isSelectableOverture</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_isSelectableStairway">isSelectableStairway</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_lock">lock</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_notify">notify</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_off">off</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_on">on</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_onAddToProducts">onAddToProducts</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onBeforeDragStart">onBeforeDragStart</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_onClick">onClick</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onClickDerived">onClickDerived</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onCloneObject">onCloneObject</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onCloneObject">onCloneObject</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onCreateObject">onCreateObject</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onDispose">onDispose</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onDispose">onDispose</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_onDoubleClick">onDoubleClick</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onDoubleClickDerived">onDoubleClickDerived</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_onDragEnd">onDragEnd</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_onDragging">onDragging</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_onDragStart">onDragStart</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_onIAction">onIAction</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onKeyDown">onKeyDown</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_onMouseDown">onMouseDown</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onMouseDownDerived">onMouseDownDerived</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_onMouseMove">onMouseMove</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onMouseMoveDerived">onMouseMoveDerived</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onMouseUpDerived">onMouseUpDerived</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onNewPlan">onNewPlan</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_onOverrideProduct">onOverrideProduct</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onRefreshObject">onRefreshObject</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onRemoveObject">onRemoveObject</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onSelectObject">onSelectObject</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_onSelectObject">onSelectObject</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_pickMeshUnderCursor">pickMeshUnderCursor</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_redoAdd">redoAdd</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_redoDelete">redoDelete</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_redoRefresh">redoRefresh</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_refreshObject">refreshObject</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_refreshReferentPlane">refreshReferentPlane</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_removeDraggable">removeDraggable</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_resetDraggable">resetDraggable</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_select">select</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_selectObject">selectObject</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_selectTopLevelObject">selectTopLevelObject</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_setDragged">setDragged</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_setReferentParent">setReferentParent</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_setRoot">setRoot</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_setScreenSize">setScreenSize</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_setSelectedObject">setSelectedObject</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_setupHistory">setupHistory</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_startListening">startListening</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_stopListening">stopListening</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_undoAdd">undoAdd</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_undoDelete">undoDelete</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_undoRefresh">undoRefresh</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_unlock">unlock</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties extends">
+                            <li class="index-item property inherited">
+                                <a href="#property__screenSizes">_screenSizes</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_cloneWidget">cloneWidget</a>
+
+                            </li>
+                            <li class="index-item property inherited">
+                                <a href="#property_domElement">domElement</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_elevationWidget">elevationWidget</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_groupMgr">groupMgr</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_groupWidget">groupWidget</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_infoWidget">infoWidget</a>
+
+                            </li>
+                            <li class="index-item property inherited">
+                                <a href="#property_listens">listens</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_lockWidget">lockWidget</a>
+
+                            </li>
+                            <li class="index-item property inherited">
+                                <a href="#property_move">move</a>
+
+                            </li>
+                            <li class="index-item property inherited">
+                                <a href="#property_objects">objects</a>
+
+                            </li>
+                            <li class="index-item property inherited">
+                                <a href="#property_params">params</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_removeWidget">removeWidget</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_rotatorWidget">rotatorWidget</a>
+
+                            </li>
+                            <li class="index-item property inherited">
+                                <a href="#property_scene">scene</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_widget">widget</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+
+                <div class="index-section events">
+                    <h3>Events</h3>
+
+                    <ul class="index-list events extends">
+                            <li class="index-item event">
+                                <a href="#event_wnp.editionComponent.removeObject">wnp.editionComponent.removeObject</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_wnp.engine3D.object.clone">wnp.engine3D.object.clone</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_wnp.request.configurator.start">wnp.request.configurator.start</a>
+
+                            </li>
+                            <li class="index-item event inherited">
+                                <a href="#event_wnp.request.disable-orbit-camera">wnp.request.disable-orbit-camera</a>
+
+                            </li>
+                            <li class="index-item event inherited">
+                                <a href="#event_wnp.request.enable-orbit-camera">wnp.request.enable-orbit-camera</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_wnp.request.groupConfigurator.start">wnp.request.groupConfigurator.start</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_wnp.request.historyAction">wnp.request.historyAction</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_wnp.request.object.remove">wnp.request.object.remove</a>
+
+                            </li>
+                            <li class="index-item event">
+                                <a href="#event_wnp.request.saveHistory">wnp.request.saveHistory</a>
+
+                            </li>
+                    </ul>
+                </div>
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method_addDraggable" class="method item inherited">
+    <h3 class="name"><code>addDraggable</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_addDraggable">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Adds an object to the list of handled objects.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        The object.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_addHistory" class="method item">
+    <h3 class="name"><code>addHistory</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>target</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+                <li class="arg">
+                        <code>type</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds a history action.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">target</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>The target of the history action.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Parameters.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">type</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                    <div class="param-description">
+                        <p>Type of the action.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_addUnremovableDraggable" class="method item private deprecated inherited">
+    <h3 class="name"><code>addUnremovableDraggable</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+        <span class="flag deprecated">deprecated</span>
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_addUnremovableDraggable">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Adds an object to the list of handled objects, that can't be removed.
+Do not use this
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        The object.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_addWidget" class="method item">
+    <h3 class="name"><code>addWidget</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>widget</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds a widget in the object edition component.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">widget</code>
+                        <span class="type">Widget</span>
+
+
+                    <div class="param-description">
+                        <p>The widget to add.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_clickSelection" class="method item inherited">
+    <h3 class="name"><code>clickSelection</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_clickSelection">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Implements the behaviour "click = selection of top-level object"
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent" class="crosslink external" target="_blank">MouseEvent</a></span>
+
+
+                    <div class="param-description">
+                        The JS event
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_constrains" class="method item inherited">
+    <h3 class="name"><code>constrains</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code class="optional">[U]</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[V]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_constrains">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Sets the constrains for the dragging.
+3 cases :
+ * No param is specified, no constraint on the dragging, the object is dragged on a sphere around the camera.
+ * Only the param <code>U</code> is specified, the object is dragged along an axis, carried by the vector <code>U</code>.
+ * Both params are specified, the object is dragged along a plane, directed by <code>U</code> and <code>V</code>.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name optional">[U]</code>
+                        <span class="type">BABYLON.Vector3</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        First Vector.
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[V]</code>
+                        <span class="type">BABYLON.Vector3</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        Second Vector.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_deselect" class="method item inherited">
+    <h3 class="name"><code>deselect</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_deselect">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Deselects the object, even if no object has been selected.
+    </div>
+
+
+
+
+</div>
+<div id="method_disableWidget" class="method item">
+    <h3 class="name"><code>disableWidget</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Disables the widgets for an object.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_dragLock" class="method item inherited">
+    <h3 class="name"><code>dragLock</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+            <p>Inherited from
+            <a href="../classes/Controls.html#method_dragLock">
+                Controls
+            </a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Locks the dragging capabilities.
+    </div>
+
+
+
+
+</div>
+<div id="method_dragSelection" class="method item inherited">
+    <h3 class="name"><code>dragSelection</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_dragSelection">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Implements the behaviour "dragging of top-level object"
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent" class="crosslink external" target="_blank">MouseEvent</a></span>
+
+
+                    <div class="param-description">
+                        The JS event
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_EnableWidget" class="method item">
+    <h3 class="name"><code>EnableWidget</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Enables the widgets for an object.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_getDragged" class="method item inherited">
+    <h3 class="name"><code>getDragged</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">BABYLON.PickingInfo</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_getDragged">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Returns the dragged object as a picking information.
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">BABYLON.PickingInfo</span>:
+                    The dragged object, as a picking information.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getLastPosition" class="method item inherited">
+    <h3 class="name"><code>getLastPosition</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_getLastPosition">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Returns the last position of the dragged object.
+    </div>
+
+
+
+
+</div>
+<div id="method_getPointerCoordinates" class="method item inherited">
+    <h3 class="name"><code>getPointerCoordinates</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_getPointerCoordinates">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Gets the correct values for the current pointer. Cross device.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        The JS event
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_getReferentParent" class="method item inherited">
+    <h3 class="name"><code>getReferentParent</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">BABYLON.Mesh</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_getReferentParent">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Returns the current referent parent, used to select or drag objects. See <code>Controls</code> wiki for more info.
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">BABYLON.Mesh</span>:
+                    The current referent parent.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getReferentPlane" class="method item inherited">
+    <h3 class="name"><code>getReferentPlane</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">BABYLON.Plane</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_getReferentPlane">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Returns the current referent plane, on which the mouse is projected when dragging.
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">BABYLON.Plane</span>:
+                    The current referent plane.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getRoot" class="method item inherited">
+    <h3 class="name"><code>getRoot</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">BABYLON.Mesh</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_getRoot">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Returns the current root, that is the top-level parent of all handled objects.
+NB : All objects that are not descendants of the root can't be handled by <code>Controls</code>.
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">BABYLON.Mesh</span>:
+                    The current root.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getSelected" class="method item inherited">
+    <h3 class="name"><code>getSelected</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">BABYLON.PickingInfo</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_getSelected">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Returns the selected object, as picking information.
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">BABYLON.PickingInfo</span>:
+                    The selected object, as picking information.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getSelectedObject" class="method item">
+    <h3 class="name"><code>getSelectedObject</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type">BABYLON.Mesh</span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+            <p>Inherited from
+            <a href="../classes/Controls.html#method_getSelectedObject">
+                Controls
+            </a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Gets the currently selected object.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type">BABYLON.Mesh</span>:
+                    <p>The currently selected object.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_historyDelete" class="method item private">
+    <h3 class="name"><code>historyDelete</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>target</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+                <li class="arg">
+                        <code>valueField</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The function called when undoing/redoing a deletion.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">target</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>The target of the history action.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Parameters.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">valueField</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                    <div class="param-description">
+                        <p>The value.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_historyRefresh" class="method item private">
+    <h3 class="name"><code>historyRefresh</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>target</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+                <li class="arg">
+                        <code>valueField</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The function called when undoing/redoing a refresh.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">target</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>The target of the history action.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Parameters</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">valueField</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                    <div class="param-description">
+                        <p>The new refresh value.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_isLocked" class="method item">
+    <h3 class="name"><code>isLocked</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns true if an object or group is locked.
+A group is locked if one of its children is locked.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        <p>The mesh to check</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>:
+                    <p>true if the object is locked</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_isSelectableObject" class="method item">
+    <h3 class="name"><code>isSelectableObject</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Checks if a mesh is selectable.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        <p>The mesh to check.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>:
+                    <p>Is a selectable mesh or not.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_isSelectableOverture" class="method item">
+    <h3 class="name"><code>isSelectableOverture</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Checks if an overture is selectable.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        <p>The mesh to check.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>:
+                    <p>Is a selectable mesh or not.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_isSelectableStairway" class="method item">
+    <h3 class="name"><code>isSelectableStairway</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Checks if a stairway is selectable.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        <p>The mesh to check.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>:
+                    <p>Is a selectable mesh or not.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_lock" class="method item">
+    <h3 class="name"><code>lock</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>key</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[flags]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Disables some behaviors. Registers a key so that the action can only be re-enabled with the same key.
+Actions to lock must be passed in parameter as their corresponding flag.
+Supports multi-lock :</p>
+<p>A lock the action ------------------------------------------------------------------- A unlock the action.
+--------------------- B lock the same action ----------------- B unlock the action -----------------------.</p>
+<p>&lt;-------------------------------action is locked --------------------------------------------------------&gt;.</p>
+<p>--------time---------&gt;.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">key</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Can be anything, is registered as key for the lock, the action will be unlocked only with the same key</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[flags]</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>Actions to lock among : CAMERALOCK = 1; DRAGLOCK = 2; KEYBOARDLOCK = 4; CAMERATRANSLATIONLOCK = 8; Default is all flags on.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_notify" class="method item inherited">
+    <h3 class="name"><code>notify</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+                <li class="arg">
+                        <code>data</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_notify">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Calls every callback registered for a specific event.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        The event.
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">data</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        The data associated to this event.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_off" class="method item inherited">
+    <h3 class="name"><code>off</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+                <li class="arg">
+                        <code>handler</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Controls.html" class="crosslink">Controls</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_off">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Removes a callback from a specific event.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        The event.
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">handler</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+
+
+                    <div class="param-description">
+                        The callback function.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/Controls.html" class="crosslink">Controls</a></span>:
+                    this.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_on" class="method item inherited">
+    <h3 class="name"><code>on</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+                <li class="arg">
+                        <code>handler</code>
+                </li>
+                <li class="arg">
+                        <code>insertFirst</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/Controls.html" class="crosslink">Controls</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_on">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Adds a callback to a specific event.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        The event.
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">handler</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+
+
+                    <div class="param-description">
+                        The callback function.
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">insertFirst</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+                    <div class="param-description">
+                        If true then insert function in first position of listeners.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/Controls.html" class="crosslink">Controls</a></span>:
+                    this.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_onAddToProducts" class="method item private">
+    <h3 class="name"><code>onAddToProducts</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>TODO</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        <p>The JS Event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onBeforeDragStart" class="method item">
+    <h3 class="name"><code>onBeforeDragStart</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on Controls event <code>before-dragstart</code>.
+Tests if the object is locked before starting to drag.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_onClick" class="method item inherited">
+    <h3 class="name"><code>onClick</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_onClick">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Triggered on event <code>wnp.engine3D.click</code>.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        The JS event.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onClickDerived" class="method item">
+    <h3 class="name"><code>onClickDerived</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>pickingInfo</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on event <code>wnp.engine3D.click.collided</code>.
+Behavior : if ctrl is pressed, the object is added to the current group, if the right button is pressed,
+the <code>special</code> event is sent to the widgets.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">pickingInfo</code>
+                        <span class="type">BABYLON.PickingInfo</span>
+
+
+                    <div class="param-description">
+                        <p>The picking information on what is under the mouse.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onCloneObject" class="method item">
+    <h3 class="name"><code>onCloneObject</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on event <code>wnp.request.object.clone</code>.
+Called when the user clones an object or a group.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_onCloneObject" class="method item">
+    <h3 class="name"><code>onCloneObject</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object3D</code>
+                </li>
+                <li class="arg">
+                        <code>doNotAddHistory</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Removes an object or a group.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object3D</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        <p>The object.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">doNotAddHistory</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+                    <div class="param-description">
+                        <p>Add or not to the history.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onCreateObject" class="method item">
+    <h3 class="name"><code>onCreateObject</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on event <code>wnp.engine3D.object.create</code>.
+Called when a mesh is added to the scene.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        <p>The JS event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onDispose" class="method item">
+    <h3 class="name"><code>onDispose</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on event <code>wnp.engine3D.object.dispose</code>.
+Called when an object is removed from the scene.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        <p>The JS event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onDispose" class="method item">
+    <h3 class="name"><code>onDispose</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on event <code>wnp.engine3D.allFloorsReady</code>.
+Called when the floor id changes.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        <p>The JS event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onDoubleClick" class="method item inherited">
+    <h3 class="name"><code>onDoubleClick</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_onDoubleClick">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Triggered on event <code>wnp.engine3D.dblclick.collided</code>.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        The JS event.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onDoubleClickDerived" class="method item">
+    <h3 class="name"><code>onDoubleClickDerived</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>pickingInfo</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on event <code>wnp.engine3D.dblclick.collided</code>.
+Behavior : triggers the function <code>animate</code> on the underlying mesh.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">pickingInfo</code>
+                        <span class="type">BABYLON.PickingInfo</span>
+
+
+                    <div class="param-description">
+                        <p>The picking information on what is under the mouse.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onDragEnd" class="method item inherited">
+    <h3 class="name"><code>onDragEnd</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_onDragEnd">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Triggered on event <code>wnp.engine3D.drag-end</code>.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        The JS event.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onDragging" class="method item inherited">
+    <h3 class="name"><code>onDragging</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_onDragging">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Triggered on event <code>wnp.engine3D.dragging</code>.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        The JS event.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onDragStart" class="method item inherited">
+    <h3 class="name"><code>onDragStart</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_onDragStart">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Triggered on event <code>wnp.engine3D.drag-start</code>.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        The JS event.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onIAction" class="method item private">
+    <h3 class="name"><code>onIAction</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Sends a different action for the configurator depending on the object's nature (Group or not).</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_onKeyDown" class="method item">
+    <h3 class="name"><code>onKeyDown</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on event <code>wnp.keyboardManager.keyDown</code>.
+Behavior : When the user uses ctrl-d (duplicates the object) and
+the delete key (removes the object).</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        <p>The JS event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onMouseDown" class="method item inherited">
+    <h3 class="name"><code>onMouseDown</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_onMouseDown">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Triggered on event <code>wnp.engine3D.mousedown</code>.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        The JS event.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onMouseDownDerived" class="method item">
+    <h3 class="name"><code>onMouseDownDerived</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on Controls event <code>mousedown</code>.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        <p>The Controls event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onMouseMove" class="method item inherited">
+    <h3 class="name"><code>onMouseMove</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_onMouseMove">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Triggered on event <code>wnp.engine3D.mouse-move</code>.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        The JS event.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onMouseMoveDerived" class="method item">
+    <h3 class="name"><code>onMouseMoveDerived</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on Controls event <code>mousemove</code>.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        <p>The Controls event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onMouseUpDerived" class="method item">
+    <h3 class="name"><code>onMouseUpDerived</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on Controls event <code>mouseup</code>.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        <p>The Controls event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onNewPlan" class="method item">
+    <h3 class="name"><code>onNewPlan</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on event <code>wnp.request.newPlanReady</code>.
+Called when the user clicks on the new plan button.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>L'objet associé à l'événement.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onOverrideProduct" class="method item private">
+    <h3 class="name"><code>onOverrideProduct</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>TODO</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        <p>The JS Event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onRefreshObject" class="method item">
+    <h3 class="name"><code>onRefreshObject</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on event <code>wnp.engine3D.object.refresh</code>.
+Called when an object is refreshed</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        <p>The JS event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onRemoveObject" class="method item">
+    <h3 class="name"><code>onRemoveObject</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on event <code>wnp.request.object.remove</code>.
+Removes an object.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Event" class="crosslink external" target="_blank">Event</a></span>
+
+
+                    <div class="param-description">
+                        <p>The JS event.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onSelectObject" class="method item">
+    <h3 class="name"><code>onSelectObject</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on Controls event <code>deselect</code>.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        <p>The selected object.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_onSelectObject" class="method item">
+    <h3 class="name"><code>onSelectObject</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Triggered on Controls event <code>select</code>.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        <p>The selected object.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_pickMeshUnderCursor" class="method item inherited">
+    <h3 class="name"><code>pickMeshUnderCursor</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>event</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[ref]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_pickMeshUnderCursor">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Picks the mesh under the mouse pointer, and returns the top-level object as a pickingInfo
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">event</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent" class="crosslink external" target="_blank">MouseEvent</a></span>
+
+
+                    <div class="param-description">
+                        The JS event
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[ref]</code>
+                        <span class="type">BABYLON.Mesh</span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        Optional parameter to override the referent parent.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_redoAdd" class="method item private">
+    <h3 class="name"><code>redoAdd</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>target</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The redo function for the add action.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">target</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>The target of the history action.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Parameters.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_redoDelete" class="method item private">
+    <h3 class="name"><code>redoDelete</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>target</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The redo function for the delete action.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">target</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>The target of the history action.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Parameters.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_redoRefresh" class="method item private">
+    <h3 class="name"><code>redoRefresh</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>target</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The redo function for the refresh action.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">target</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>The target of the history action.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Parameters</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_refreshObject" class="method item">
+    <h3 class="name"><code>refreshObject</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object3D</code>
+                </li>
+                <li class="arg">
+                        <code>options</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Refreshes an object. Rebuilds the entire 3D object, given the programmable instance it is linked to.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object3D</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        <p>the mesh to refresh.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">options</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>The options : noHistory and modifiedProperties</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_refreshReferentPlane" class="method item inherited">
+    <h3 class="name"><code>refreshReferentPlane</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_refreshReferentPlane">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Refresh the referent dragging plane, taking the constraints into account.
+    </div>
+
+
+
+
+</div>
+<div id="method_removeDraggable" class="method item inherited">
+    <h3 class="name"><code>removeDraggable</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_removeDraggable">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Removes an object to the list of handled objects.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        The object.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_resetDraggable" class="method item inherited">
+    <h3 class="name"><code>resetDraggable</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_resetDraggable">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Empties the list of handled objects.
+    </div>
+
+
+
+
+</div>
+<div id="method_select" class="method item inherited">
+    <h3 class="name"><code>select</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>topLevelObjectPI</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_select">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Selects an object, as a picking information.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">topLevelObjectPI</code>
+                        <span class="type">BABYLON.PickingInfo</span>
+
+
+                    <div class="param-description">
+                        The new selected object, as a picking information.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_selectObject" class="method item inherited">
+    <h3 class="name"><code>selectObject</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_selectObject">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Selects an object.
+NB : A picking info is created, with a null distance and a null pickedPoint.
+NB 2 : The difference with <code>setSelectedObject</code> is that a <code>select</code> event is fired.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        The new selected object.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_selectTopLevelObject" class="method item inherited">
+    <h3 class="name"><code>selectTopLevelObject</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_selectTopLevelObject">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Selects the top-level object, relative to the referent parent, for the given object.
+NB : A picking info is created, with a null distance and a null pickedPoint.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        The object from which we have to find the top-level object.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_setDragged" class="method item inherited">
+    <h3 class="name"><code>setDragged</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>dragged</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_setDragged">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Forces the dragged object without having to click on it.
+NB : Warning, the parameter is a picking info !
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">dragged</code>
+                        <span class="type">BABYLON.PickingInfo</span>
+
+
+                    <div class="param-description">
+                        The new dragged object.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_setReferentParent" class="method item inherited">
+    <h3 class="name"><code>setReferentParent</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>parent</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_setReferentParent">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Sets the current referent parent, used to select or drag objects. See <code>Controls</code> wiki for more info.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">parent</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        The new referent parent.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_setRoot" class="method item inherited">
+    <h3 class="name"><code>setRoot</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>root</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_setRoot">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Sets the current root, that is the top-level parent of all handled objects.
+NB : All objects that are not descendants of the root can't be handled by <code>Controls</code>.
+NB 2 : The referent parent is also set to the new root, for consistency.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">root</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        The new root.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_setScreenSize" class="method item inherited">
+    <h3 class="name"><code>setScreenSize</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>width</code>
+                </li>
+                <li class="arg">
+                        <code>height</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_setScreenSize">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Sets the canvas size.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">width</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                    <div class="param-description">
+                        The width.
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">height</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                    <div class="param-description">
+                        The height.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_setSelectedObject" class="method item inherited">
+    <h3 class="name"><code>setSelectedObject</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>object</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_setSelectedObject">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Forces the selected object without having to click on it.
+NB : A picking info is created, with a null distance and a null pickedPoint.
+NB 2 : The difference with <code>selectObject</code> is that no <code>select</code> event is fired.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">object</code>
+                        <span class="type">BABYLON.Mesh</span>
+
+
+                    <div class="param-description">
+                        The new selected object.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_setupHistory" class="method item">
+    <h3 class="name"><code>setupHistory</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Setupps the history for the edition actions.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_startListening" class="method item inherited">
+    <h3 class="name"><code>startListening</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_startListening">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Starts the listening of <code>Engine3D</code> events.
+    </div>
+
+
+
+
+</div>
+<div id="method_stopListening" class="method item inherited">
+    <h3 class="name"><code>stopListening</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#method_stopListening">Controls</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Stops the listening of <code>Engine3D</code> events.
+    </div>
+
+
+
+
+</div>
+<div id="method_undoAdd" class="method item private">
+    <h3 class="name"><code>undoAdd</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>target</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The undo function for the add action.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">target</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>The target of the history action.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Parameters.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_undoDelete" class="method item private">
+    <h3 class="name"><code>undoDelete</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>target</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The undo function for the delete action.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">target</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>The target of the history action.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Parameters</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_undoRefresh" class="method item private">
+    <h3 class="name"><code>undoRefresh</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>target</code>
+                </li>
+                <li class="arg">
+                        <code>params</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>The undo function for the refresh action.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">target</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>The target of the history action.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">params</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Parameters</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_unlock" class="method item">
+    <h3 class="name"><code>unlock</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>key</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[flags]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Re-enables locked behaviors.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">key</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Key that was used to lock actions</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[flags]</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>Actions to unlock among: CAMERALOCK = 1; DRAGLOCK = 2; KEYBOARDLOCK = 4; CAMERATRANSLATIONLOCK = 8; Default is all flags on.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+            </div>
+
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
+
+<div id="property__screenSizes" class="property item inherited">
+    <h3 class="name"><code>_screenSizes</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#property__screenSizes">Controls</a>:
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        Screen Sizes (width and height)
+    </div>
+
+
+
+</div>
+<div id="property_cloneWidget" class="property item">
+    <h3 class="name"><code>cloneWidget</code></h3>
+    <span class="type">Widget.Clone</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The clone widget:
+Allows the user to duplicate an object by clicking on the copy icon.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_domElement" class="property item inherited">
+    <h3 class="name"><code>domElement</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement" class="crosslink external" target="_blank">HTMLCanvasElement</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#property_domElement">Controls</a>:
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        The canvas.
+    </div>
+
+
+
+</div>
+<div id="property_elevationWidget" class="property item">
+    <h3 class="name"><code>elevationWidget</code></h3>
+    <span class="type">Widget.Info</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The elevation widget:
+Creates a widget panel on the right side of the screen
+and allows to change the elevation of an object by dragging the cursor of the elevation bar.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_groupMgr" class="property item">
+    <h3 class="name"><code>groupMgr</code></h3>
+    <span class="type"><a href="../classes/GroupManager.html" class="crosslink">GroupManager</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Group Manager</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_groupWidget" class="property item">
+    <h3 class="name"><code>groupWidget</code></h3>
+    <span class="type">Widget.Group</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The group widget:
+Allows the user to group/ungroup objects if several objects/a group are selected.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_infoWidget" class="property item">
+    <h3 class="name"><code>infoWidget</code></h3>
+    <span class="type">Widget.Info</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The info widget:
+Allows the user to have all the properties of an object by clicking on the info sprite.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_listens" class="property item inherited">
+    <h3 class="name"><code>listens</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#property_listens">Controls</a>:
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        Flag that indicates if the Controls are listening to the Engine3D events
+    </div>
+
+
+
+</div>
+<div id="property_lockWidget" class="property item">
+    <h3 class="name"><code>lockWidget</code></h3>
+    <span class="type">Widget.Lock</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The lock widget:
+Allows the user to lock/unlock an object by clicking on the lock icon.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_move" class="property item inherited">
+    <h3 class="name"><code>move</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" class="crosslink external" target="_blank">Function</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#property_move">Controls</a>:
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        Move callback, called by Controls to move an object in the scene.
+    </div>
+
+
+
+</div>
+<div id="property_objects" class="property item inherited">
+    <h3 class="name"><code>objects</code></h3>
+    <span class="type">BABYLON.Mesh</span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#property_objects">Controls</a>:
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        3D objects handled by the controls (selectable and draggable).
+    </div>
+
+
+
+</div>
+<div id="property_params" class="property item inherited">
+    <h3 class="name"><code>params</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#property_params">Controls</a>:
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        Controls parameters.
+    </div>
+
+
+
+</div>
+<div id="property_removeWidget" class="property item">
+    <h3 class="name"><code>removeWidget</code></h3>
+    <span class="type">Widget.Remove</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The remove widget:
+Allows the user to remove an object by clicking on the trash icon.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_rotatorWidget" class="property item">
+    <h3 class="name"><code>rotatorWidget</code></h3>
+    <span class="type">Widget.Rotator</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The rotator widget:
+Allows the user to turn an object with the green circle.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_scene" class="property item inherited">
+    <h3 class="name"><code>scene</code></h3>
+    <span class="type">BABYLON.Scene</span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/Controls.html#property_scene">Controls</a>:
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        The 3D scene.
+    </div>
+
+
+
+</div>
+<div id="property_widget" class="property item">
+    <h3 class="name"><code>widget</code></h3>
+    <span class="type">Widget</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>The table of all widgets.</p>
+
+    </div>
+
+
+
+</div>
+            </div>
+
+
+            <div id="events" class="api-class-tabpanel">
+                <h2 class="off-left">Events</h2>
+
+                    <div id="event_wnp.editionComponent.removeObject" class="events item">
+                        <h3 class="name"><code>wnp.editionComponent.removeObject</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="event_wnp.engine3D.object.clone" class="events item">
+                        <h3 class="name"><code>wnp.engine3D.object.clone</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Fired to clone an object</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="event_wnp.request.configurator.start" class="events item">
+                        <h3 class="name"><code>wnp.request.configurator.start</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Fired when the configurator is needed for an object.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="event_wnp.request.disable-orbit-camera" class="events item inherited">
+                        <h3 class="name"><code>wnp.request.disable-orbit-camera</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Controls.html#event_wnp.request.disable-orbit-camera">Controls</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            Fired to disable the orbit camera.
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="event_wnp.request.enable-orbit-camera" class="events item inherited">
+                        <h3 class="name"><code>wnp.request.enable-orbit-camera</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>Inherited from
+                                    <a href="../classes/Controls.html#event_wnp.request.enable-orbit-camera">Controls</a>:
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            Fired to enable the orbit camera.
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="event_wnp.request.groupConfigurator.start" class="events item">
+                        <h3 class="name"><code>wnp.request.groupConfigurator.start</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Fired when the configurator is needed for a group.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+                    <div id="event_wnp.request.historyAction" class="events item">
+                        <h3 class="name"><code>wnp.request.historyAction</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Fired when the history is needed on an action.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">component</code>
+                                            <span class="type"><a href="../classes/BaseComponent3D.html" class="crosslink">BaseComponent3D</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            <p>The component of the action (here it is EditionComponent3D).</p>
+                    
+                                        </div>
+                    
+                                    </li>
+                                    <li class="param">
+                                            <code class="param-name">object</code>
+                                            <span class="type">BABYLON.Mesh</span>
+                    
+                    
+                                        <div class="param-description">
+                                            <p>The target object.</p>
+                    
+                                        </div>
+                    
+                                    </li>
+                                    <li class="param">
+                                            <code class="param-name">params</code>
+                                            <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            <p>Parameters of the history.</p>
+                    
+                                        </div>
+                    
+                                    </li>
+                                    <li class="param">
+                                            <code class="param-name">action</code>
+                                            <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            <p>The type of action done.</p>
+                    
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_wnp.request.object.remove" class="events item">
+                        <h3 class="name"><code>wnp.request.object.remove</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Fired when the delete button is pushed while a mesh is selected.</p>
+                    
+                        </div>
+                    
+                            <div class="params">
+                                <h4>Event Payload:</h4>
+                    
+                                <ul class="params-list">
+                                    <li class="param">
+                                            <code class="param-name">object</code>
+                                            <span class="type">BABYLON.Mesh</span>
+                    
+                    
+                                        <div class="param-description">
+                                            <p>The currently selected object.</p>
+                    
+                                        </div>
+                    
+                                    </li>
+                                    <li class="param">
+                                            <code class="param-name">structure</code>
+                                            <span class="type"><a href="../classes/FloorStructure.html" class="crosslink">FloorStructure</a></span>
+                    
+                    
+                                        <div class="param-description">
+                                            <p>The current structure.</p>
+                    
+                                        </div>
+                    
+                                    </li>
+                                </ul>
+                            </div>
+                    
+                    
+                    </div>
+                    <div id="event_wnp.request.saveHistory" class="events item">
+                        <h3 class="name"><code>wnp.request.saveHistory</code></h3>
+                        <span class="type"></span>
+                    
+                    
+                    
+                    
+                    
+                        <div class="meta">
+                                    <p>
+                            </p>
+                    
+                    
+                        </div>
+                    
+                        <div class="description">
+                            <p>Fired to request a save of the history.</p>
+                    
+                        </div>
+                    
+                    
+                    
+                    </div>
+            </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

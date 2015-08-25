@@ -1,0 +1,2321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>FloorStructure - wanaplan</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="icon" href="../assets/favicon.ico">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+                <h1><img src="../assets/css/logo.png" title="wanaplan" width="117" height="52"></h1>
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: 2.7.3</em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+                    <h2 class="off-left">APIs</h2>
+                    <div id="api-tabview" class="tabview">
+                        <ul class="tabs">
+                            <li><a href="#api-classes">Classes</a></li>
+                            <li><a href="#api-modules">Modules</a></li>
+                        </ul>
+                
+                        <div id="api-tabview-filter">
+                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+                        </div>
+                
+                        <div id="api-tabview-panel">
+                            <ul id="api-classes" class="apis classes">
+                                <li><a href="../classes/AnalyticsComponent.html">AnalyticsComponent</a></li>
+                                <li><a href="../classes/API.html">API</a></li>
+                                <li><a href="../classes/API.e2D.html">API.e2D</a></li>
+                                <li><a href="../classes/API.e3D.html">API.e3D</a></li>
+                                <li><a href="../classes/API.html.html">API.html</a></li>
+                                <li><a href="../classes/API.material.html">API.material</a></li>
+                                <li><a href="../classes/API.ui.html">API.ui</a></li>
+                                <li><a href="../classes/API.utils.html">API.utils</a></li>
+                                <li><a href="../classes/AssimpImporter.html">AssimpImporter</a></li>
+                                <li><a href="../classes/AvatarComponent3D.html">AvatarComponent3D</a></li>
+                                <li><a href="../classes/BaseComponent2D.html">BaseComponent2D</a></li>
+                                <li><a href="../classes/BaseComponent3D.html">BaseComponent3D</a></li>
+                                <li><a href="../classes/BaseStructure.html">BaseStructure</a></li>
+                                <li><a href="../classes/BaseTopMenuComponent2D.html">BaseTopMenuComponent2D</a></li>
+                                <li><a href="../classes/CameraComponent.html">CameraComponent</a></li>
+                                <li><a href="../classes/ColladaExporter.html">ColladaExporter</a></li>
+                                <li><a href="../classes/ConfiguratorModComponent3D.html">ConfiguratorModComponent3D</a></li>
+                                <li><a href="../classes/Constants.html">Constants</a></li>
+                                <li><a href="../classes/Controls.html">Controls</a></li>
+                                <li><a href="../classes/DecorationComponent.html">DecorationComponent</a></li>
+                                <li><a href="../classes/DGM_LoadComponent.html">DGM_LoadComponent</a></li>
+                                <li><a href="../classes/DGM_SaveComponent.html">DGM_SaveComponent</a></li>
+                                <li><a href="../classes/DGM_ZoomComponent.html">DGM_ZoomComponent</a></li>
+                                <li><a href="../classes/DragComponent3D.html">DragComponent3D</a></li>
+                                <li><a href="../classes/Dummy.html">Dummy</a></li>
+                                <li><a href="../classes/EditionComponent3D.html">EditionComponent3D</a></li>
+                                <li><a href="../classes/EditMeasureComponent.html">EditMeasureComponent</a></li>
+                                <li><a href="../classes/EVENTS.html">EVENTS</a></li>
+                                <li><a href="../classes/ExitComponent.html">ExitComponent</a></li>
+                                <li><a href="../classes/ExporterComponent3D.html">ExporterComponent3D</a></li>
+                                <li><a href="../classes/ExporterHelper.html">ExporterHelper</a></li>
+                                <li><a href="../classes/FloorComponent3D.html">FloorComponent3D</a></li>
+                                <li><a href="../classes/FloorController.html">FloorController</a></li>
+                                <li><a href="../classes/FloorStructure.html">FloorStructure</a></li>
+                                <li><a href="../classes/FullscreenComponent.html">FullscreenComponent</a></li>
+                                <li><a href="../classes/GlobalHelper.html">GlobalHelper</a></li>
+                                <li><a href="../classes/GridComponent2D.html">GridComponent2D</a></li>
+                                <li><a href="../classes/GridComponent3D.html">GridComponent3D</a></li>
+                                <li><a href="../classes/GroupManager.html">GroupManager</a></li>
+                                <li><a href="../classes/HardwareScalingComponent3D.html">HardwareScalingComponent3D</a></li>
+                                <li><a href="../classes/HideAvatarComponent.html">HideAvatarComponent</a></li>
+                                <li><a href="../classes/HistoryComponent.html">HistoryComponent</a></li>
+                                <li><a href="../classes/HopperComponent2D.html">HopperComponent2D</a></li>
+                                <li><a href="../classes/HopperComponent3D.html">HopperComponent3D</a></li>
+                                <li><a href="../classes/HopperStructure.html">HopperStructure</a></li>
+                                <li><a href="../classes/Info.html">Info</a></li>
+                                <li><a href="../classes/KZShareComponent.html">KZShareComponent</a></li>
+                                <li><a href="../classes/LockComponent.html">LockComponent</a></li>
+                                <li><a href="../classes/Logger.html">Logger</a></li>
+                                <li><a href="../classes/MagnetismComponent2D.html">MagnetismComponent2D</a></li>
+                                <li><a href="../classes/MagnetismComponent3D.html">MagnetismComponent3D</a></li>
+                                <li><a href="../classes/MaterialInfo.html">MaterialInfo</a></li>
+                                <li><a href="../classes/MeasureComponent.html">MeasureComponent</a></li>
+                                <li><a href="../classes/MeasureStructure.html">MeasureStructure</a></li>
+                                <li><a href="../classes/MobileComponent.html">MobileComponent</a></li>
+                                <li><a href="../classes/MobileInputComponent.html">MobileInputComponent</a></li>
+                                <li><a href="../classes/MobileVRCamera.html">MobileVRCamera</a></li>
+                                <li><a href="../classes/MobileVRComponent.html">MobileVRComponent</a></li>
+                                <li><a href="../classes/NewComponent.html">NewComponent</a></li>
+                                <li><a href="../classes/ObjectComponent3D.html">ObjectComponent3D</a></li>
+                                <li><a href="../classes/ObjectHelper.html">ObjectHelper</a></li>
+                                <li><a href="../classes/ObjectHelper.AABB.html">ObjectHelper.AABB</a></li>
+                                <li><a href="../classes/ObjectHelper.collision.html">ObjectHelper.collision</a></li>
+                                <li><a href="../classes/ObjectHelper.Interval.html">ObjectHelper.Interval</a></li>
+                                <li><a href="../classes/ObjectHelper.OBB.html">ObjectHelper.OBB</a></li>
+                                <li><a href="../classes/ObjectHelper.OyBB.html">ObjectHelper.OyBB</a></li>
+                                <li><a href="../classes/ObjectStructure.html">ObjectStructure</a></li>
+                                <li><a href="../classes/OBJExporter.html">OBJExporter</a></li>
+                                <li><a href="../classes/OculusRiftCamera.html">OculusRiftCamera</a></li>
+                                <li><a href="../classes/OculusRiftComponent.html">OculusRiftComponent</a></li>
+                                <li><a href="../classes/OptionsComponent.html">OptionsComponent</a></li>
+                                <li><a href="../classes/OvertureComponent2D.html">OvertureComponent2D</a></li>
+                                <li><a href="../classes/OvertureComponent3D.html">OvertureComponent3D</a></li>
+                                <li><a href="../classes/OvertureStructure.html">OvertureStructure</a></li>
+                                <li><a href="../classes/PedagoComponent.html">PedagoComponent</a></li>
+                                <li><a href="../classes/PerformanceComponent2D.html">PerformanceComponent2D</a></li>
+                                <li><a href="../classes/PointComponent2D.html">PointComponent2D</a></li>
+                                <li><a href="../classes/PointStructure.html">PointStructure</a></li>
+                                <li><a href="../classes/PolygonWall.html">PolygonWall</a></li>
+                                <li><a href="../classes/RoofComponent2D.html">RoofComponent2D</a></li>
+                                <li><a href="../classes/RoofComponent3D.html">RoofComponent3D</a></li>
+                                <li><a href="../classes/RoofStructure.html">RoofStructure</a></li>
+                                <li><a href="../classes/RoomComponent2D.html">RoomComponent2D</a></li>
+                                <li><a href="../classes/RoomComponent3D.html">RoomComponent3D</a></li>
+                                <li><a href="../classes/RoomHierarchy.html">RoomHierarchy</a></li>
+                                <li><a href="../classes/RoomStructure.html">RoomStructure</a></li>
+                                <li><a href="../classes/Rotator.html">Rotator</a></li>
+                                <li><a href="../classes/SA_ConnectionStatusDetector.html">SA_ConnectionStatusDetector</a></li>
+                                <li><a href="../classes/SA_DatabaseManager.html">SA_DatabaseManager</a></li>
+                                <li><a href="../classes/SA_NewComponent.html">SA_NewComponent</a></li>
+                                <li><a href="../classes/SA_StorageManager.html">SA_StorageManager</a></li>
+                                <li><a href="../classes/SA_Timer.html">SA_Timer</a></li>
+                                <li><a href="../classes/SA_WebService.html">SA_WebService</a></li>
+                                <li><a href="../classes/ScreenshotMenuComponent.html">ScreenshotMenuComponent</a></li>
+                                <li><a href="../classes/SketchfabExporter.html">SketchfabExporter</a></li>
+                                <li><a href="../classes/SpiralStairwayStructure.html">SpiralStairwayStructure</a></li>
+                                <li><a href="../classes/StairwayComponent2D.html">StairwayComponent2D</a></li>
+                                <li><a href="../classes/StairwayComponent3D.html">StairwayComponent3D</a></li>
+                                <li><a href="../classes/StairwayStructure.html">StairwayStructure</a></li>
+                                <li><a href="../classes/StandaloneComponent.html">StandaloneComponent</a></li>
+                                <li><a href="../classes/STLExporter.html">STLExporter</a></li>
+                                <li><a href="../classes/StraightStairwayStructure.html">StraightStairwayStructure</a></li>
+                                <li><a href="../classes/SubSlopeComponent2D.html">SubSlopeComponent2D</a></li>
+                                <li><a href="../classes/SubSlopeComponent3D.html">SubSlopeComponent3D</a></li>
+                                <li><a href="../classes/SubSlopeOvertureComponent2D.html">SubSlopeOvertureComponent2D</a></li>
+                                <li><a href="../classes/SubSlopeOvertureStructure.html">SubSlopeOvertureStructure</a></li>
+                                <li><a href="../classes/SubSlopeStructure.html">SubSlopeStructure</a></li>
+                                <li><a href="../classes/SwimmingPoolComponent2D.html">SwimmingPoolComponent2D</a></li>
+                                <li><a href="../classes/SwimmingPoolComponent3D.html">SwimmingPoolComponent3D</a></li>
+                                <li><a href="../classes/SwimmingPoolStructure.html">SwimmingPoolStructure</a></li>
+                                <li><a href="../classes/TransformObjectComponent3D.html">TransformObjectComponent3D</a></li>
+                                <li><a href="../classes/TransparencyComponent.html">TransparencyComponent</a></li>
+                                <li><a href="../classes/UpdateNotification.html">UpdateNotification</a></li>
+                                <li><a href="../classes/WallComponent2D.html">WallComponent2D</a></li>
+                                <li><a href="../classes/WallComponent3D.html">WallComponent3D</a></li>
+                                <li><a href="../classes/WallPane3D.html">WallPane3D</a></li>
+                                <li><a href="../classes/WallStructure.html">WallStructure</a></li>
+                                <li><a href="../classes/wnp.AnimationCancelor.html">wnp.AnimationCancelor</a></li>
+                                <li><a href="../classes/wnp.Assimp2jsonImporter.html">wnp.Assimp2jsonImporter</a></li>
+                                <li><a href="../classes/wnp.CameraFeatures.html">wnp.CameraFeatures</a></li>
+                                <li><a href="../classes/wnp.GlassMaterial.html">wnp.GlassMaterial</a></li>
+                                <li><a href="../classes/wnp.ImageProcessor.html">wnp.ImageProcessor</a></li>
+                                <li><a href="../classes/wnp.Input.TouchManager.html">wnp.Input.TouchManager</a></li>
+                                <li><a href="../classes/wnp.KeyboardManager.html">wnp.KeyboardManager</a></li>
+                                <li><a href="../classes/wnp.LeatherMaterial.html">wnp.LeatherMaterial</a></li>
+                                <li><a href="../classes/wnp.LoopTimer.html">wnp.LoopTimer</a></li>
+                                <li><a href="../classes/wnp.MetalMaterial.html">wnp.MetalMaterial</a></li>
+                                <li><a href="../classes/wnp.Outliner.html">wnp.Outliner</a></li>
+                                <li><a href="../classes/wnp.PlasticMaterial.html">wnp.PlasticMaterial</a></li>
+                                <li><a href="../classes/wnp.PointerManager.html">wnp.PointerManager</a></li>
+                                <li><a href="../classes/wnp.Programmable.html">wnp.Programmable</a></li>
+                                <li><a href="../classes/wnp.StandardMaterial.html">wnp.StandardMaterial</a></li>
+                                <li><a href="../classes/wnp.Symbols2D.html">wnp.Symbols2D</a></li>
+                                <li><a href="../classes/wnp.TexturedMaterial.html">wnp.TexturedMaterial</a></li>
+                                <li><a href="../classes/wnp.TileMaterial.html">wnp.TileMaterial</a></li>
+                                <li><a href="../classes/wnp.uuid.html">wnp.uuid</a></li>
+                                <li><a href="../classes/wnp.WhiteMaterial.html">wnp.WhiteMaterial</a></li>
+                                <li><a href="../classes/wnp.WoodMaterial.html">wnp.WoodMaterial</a></li>
+                            </ul>
+                
+                            <ul id="api-modules" class="apis modules">
+                                <li><a href="../modules/API.html">API</a></li>
+                                <li><a href="../modules/Component.html">Component</a></li>
+                                <li><a href="../modules/Core.html">Core</a></li>
+                                <li><a href="../modules/EVENTS.html">EVENTS</a></li>
+                                <li><a href="../modules/Events.html">Events</a></li>
+                                <li><a href="../modules/Helpers.html">Helpers</a></li>
+                                <li><a href="../modules/Input.html">Input</a></li>
+                                <li><a href="../modules/Kozikaza.html">Kozikaza</a></li>
+                                <li><a href="../modules/Materials.html">Materials</a></li>
+                                <li><a href="../modules/Programmable.html">Programmable</a></li>
+                                <li><a href="../modules/Rendering.html">Rendering</a></li>
+                                <li><a href="../modules/Wanaplan.html">Wanaplan</a></li>
+                                <li><a href="../modules/Widget.html">Widget</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+                    Show:
+                    <label for="api-show-inherited">
+                        <input type="checkbox" id="api-show-inherited" checked>
+                        Inherited
+                    </label>
+            
+                    <label for="api-show-protected">
+                        <input type="checkbox" id="api-show-protected">
+                        Protected
+                    </label>
+            
+                    <label for="api-show-private">
+                        <input type="checkbox" id="api-show-private">
+                        Private
+                    </label>
+                    <label for="api-show-deprecated">
+                        <input type="checkbox" id="api-show-deprecated">
+                        Deprecated
+                    </label>
+            
+                </div>
+            
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+<h1>FloorStructure Class</h1>
+<div class="box meta">
+
+        <div class="extends">
+            Extends <a href="../classes/BaseStructure.html" class="crosslink">BaseStructure</a>
+        </div>
+
+
+            Module: <a href="../modules/Component.html">Component</a><br>
+            Parent Module: <a href="../modules/Wanaplan.html">Wanaplan</a>
+
+</div>
+
+
+<div class="box intro">
+    <p>Floor.</p>
+
+</div>
+
+    <div class="constructor">
+        <h2>Constructor</h2>
+<div id="method_FloorStructure" class="method item">
+    <h3 class="name"><code>FloorStructure</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        
+    </div>
+
+
+
+
+</div>
+    </div>
+
+<div id="classdocs" class="tabview">
+    <ul class="api-class-tabs">
+        <li class="api-class-tab index"><a href="#index">Index</a></li>
+
+            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
+            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
+    </ul>
+
+    <div>
+        <div id="index" class="api-class-tabpanel index">
+            <h2 class="off-left">Item Index</h2>
+
+                <div class="index-section methods">
+                    <h3>Methods</h3>
+
+                    <ul class="index-list methods extends">
+                            <li class="index-item method private inherited">
+                                <a href="#method_add">add</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_addOneWall">addOneWall</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_addWallsAsPolygon">addWallsAsPolygon</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_clone">clone</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_deserialize">deserialize</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_dirty">dirty</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_disableCeiling">disableCeiling</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getElementByIdentifier">getElementByIdentifier</a>
+
+                            </li>
+                            <li class="index-item method private inherited">
+                                <a href="#method_getElementByName">getElementByName</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_getElements">getElements</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_getFloor">getFloor</a>
+
+                            </li>
+                            <li class="index-item method private inherited">
+                                <a href="#method_initialize">initialize</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_insertElement">insertElement</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_isDirty">isDirty</a>
+
+                            </li>
+                            <li class="index-item method private">
+                                <a href="#method_prepareWallStructure">prepareWallStructure</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_reindexElements">reindexElements</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_removeAllWalls">removeAllWalls</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_removeElement">removeElement</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_removeElements">removeElements</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_serialize">serialize</a>
+
+                            </li>
+                            <li class="index-item method">
+                                <a href="#method_tidy">tidy</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_update">update</a>
+
+                            </li>
+                            <li class="index-item method inherited">
+                                <a href="#method_updateReferences">updateReferences</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="index-section properties">
+                    <h3>Properties</h3>
+
+                    <ul class="index-list properties extends">
+                            <li class="index-item property">
+                                <a href="#property_dirtyGeometry">dirtyGeometry</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_elevation">elevation</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_externalRooms">externalRooms</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_extraPanes">extraPanes</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_height">height</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_hoppers">hoppers</a>
+
+                            </li>
+                            <li class="index-item property inherited">
+                                <a href="#property_id">id</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_internalRooms">internalRooms</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_label">label</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_lockElevation">lockElevation</a>
+
+                            </li>
+                            <li class="index-item property inherited">
+                                <a href="#property_name">name</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_objects">objects</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_overtures">overtures</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_points">points</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_roofs">roofs</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_stairways">stairways</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_subSlopeOverture">subSlopeOverture</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_subslopes">subslopes</a>
+
+                            </li>
+                            <li class="index-item property">
+                                <a href="#property_walls">walls</a>
+
+                            </li>
+                    </ul>
+                </div>
+
+
+        </div>
+
+            <div id="methods" class="api-class-tabpanel">
+                <h2 class="off-left">Methods</h2>
+
+<div id="method_add" class="method item private inherited">
+    <h3 class="name"><code>add</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>propertyName</code>
+                </li>
+                <li class="arg">
+                        <code>value</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/BaseStructure.html#method_add">BaseStructure</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Adds an element to the collection in parameter.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">propertyName</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                    <div class="param-description">
+                        Name of the dictionnary.
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">value</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        Value to distribute.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                    Returns true if the value is added else returns false.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_addOneWall" class="method item">
+    <h3 class="name"><code>addOneWall</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>a</code>
+                </li>
+                <li class="arg">
+                        <code>b</code>
+                </li>
+                <li class="arg">
+                        <code>options</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/WallStructure.html" class="crosslink">WallStructure</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds one wall to the floor. The wall will be merged with the existing walls of the floor if needed.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">a</code>
+                        <span class="type">BABYLON.Vector2</span>
+
+
+                    <div class="param-description">
+                        <p>The first point, must have x and y attribute ( BABYLON.Vector2 for example ).</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">b</code>
+                        <span class="type">BABYLON.Vector2</span>
+
+
+                    <div class="param-description">
+                        <p>The second point, must have x and y attribute ( BABYLON.Vector2 for example ).</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">options</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Set of options</p>
+
+                    </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                    <code class="param-name">height</code>
+                                    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+                                <div class="param-description">
+                                    <p>The height of the wall</p>
+
+                                </div>
+
+                            </li>
+                            <li class="param">
+                                    <code class="param-name">tickness</code>
+                                    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+                                <div class="param-description">
+                                    <p>The thickness of the wall</p>
+
+                                </div>
+
+                            </li>
+                        </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/WallStructure.html" class="crosslink">WallStructure</a></span>:
+                    <p>The added wall</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_addWallsAsPolygon" class="method item">
+    <h3 class="name"><code>addWallsAsPolygon</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>polygon</code>
+                </li>
+                <li class="arg">
+                        <code>options</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/WallStructure.html" class="crosslink">WallStructure[]</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Adds walls to the floor. The walls will be merged together if needed, and with the existing walls of the floor if needed.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">polygon</code>
+                        <span class="type">BABYLON.Vector2</span>
+
+
+                    <div class="param-description">
+                        <p>The 2D polygon, is an array of point objects which must have x and y attribute ( BABYLON.Vector2 for example ). The polygon does not need to repeat the first and last elements, it's already considered closed.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">options</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Set of options</p>
+
+                    </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                    <code class="param-name">height</code>
+                                    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+                                <div class="param-description">
+                                    <p>The height of the walls</p>
+
+                                </div>
+
+                            </li>
+                            <li class="param">
+                                    <code class="param-name">tickness</code>
+                                    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+                                <div class="param-description">
+                                    <p>The thickness of the walls</p>
+
+                                </div>
+
+                            </li>
+                            <li class="param">
+                                    <code class="param-name">line</code>
+                                    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+                                <div class="param-description">
+                                    <p>true if the polygon is a line, will connect the last and first point if left to false</p>
+
+                                </div>
+
+                            </li>
+                        </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/WallStructure.html" class="crosslink">WallStructure[]</a></span>:
+                    <p>The added walls.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_clone" class="method item">
+    <h3 class="name"><code>clone</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/FloorStructure.html" class="crosslink">FloorStructure</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Clones the current floor structure.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/FloorStructure.html" class="crosslink">FloorStructure</a></span>:
+                    <p>the cloned object</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_deserialize" class="method item inherited">
+    <h3 class="name"><code>deserialize</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>hybrid</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/BaseStructure.html#method_deserialize">BaseStructure</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Deserializes the object (from JSON).
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">hybrid</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        JSON describing the object, built with the method serialize.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                    The Structure object built from the deserialization
+            </div>
+        </div>
+
+
+</div>
+<div id="method_dirty" class="method item">
+    <h3 class="name"><code>dirty</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Signals that the floor geometry has been dirtied, and needs to be updated.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_disableCeiling" class="method item">
+    <h3 class="name"><code>disableCeiling</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Disable the ceiling on all the floor</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_getElementByIdentifier" class="method item">
+    <h3 class="name"><code>getElementByIdentifier</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>id</code>
+                </li>
+                <li class="arg">
+                        <code>category</code>
+                </li>
+                <li class="arg">
+                        <code class="optional">[identifier=&quot;id&quot;]</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns an indexed element in the given category.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">id</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                    <div class="param-description">
+                        <p>Id of the element.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">category</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                    <div class="param-description">
+                        <p>Category of the element (ex: &quot;walls&quot;, &quot;points&quot;,...).</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name optional">[identifier=&quot;id&quot;]</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                        <span class="flag optional" title="This parameter is optional.">optional</span>
+
+
+                    <div class="param-description">
+                        <p>Primary key of the search (ex: &quot;id&quot;, &quot;name&quot;, ...).</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_getElementByName" class="method item private inherited">
+    <h3 class="name"><code>getElementByName</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>name</code>
+                </li>
+                <li class="arg">
+                        <code>collection</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/BaseStructure.html#method_getElementByName">BaseStructure</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Gets an element of the collection by its name.
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">name</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                    <div class="param-description">
+                        The name of the element to search.
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">collection</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                    <div class="param-description">
+                        The name of the collection in which we want to search. If this parameter is not defined,
+                the search is done in all the collection of type array.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                    Returns the needed element if it exists, else returns null.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getElements" class="method item">
+    <h3 class="name"><code>getElements</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>category</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/BaseStructure.html" class="crosslink">BaseStructure[]</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Returns all elements in a category.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">category</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                    <div class="param-description">
+                        <p>Category of an element (ex: &quot;walls&quot;, &quot;points&quot;,...).</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/BaseStructure.html" class="crosslink">BaseStructure[]</a></span>:
+                    <p>List of elements of the category.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_getFloor" class="method item inherited">
+    <h3 class="name"><code>getFloor</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>collection</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/FloorStructure.html" class="crosslink">FloorStructure</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/BaseStructure.html#method_getFloor">BaseStructure</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Gets the floor referencing this object
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">collection</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                    <div class="param-description">
+                        Collection to search within.
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/FloorStructure.html" class="crosslink">FloorStructure</a></span>:
+                    The floor containing this structure, -1 if the object has not been added to any floor collection.
+            </div>
+        </div>
+
+
+</div>
+<div id="method_initialize" class="method item private inherited">
+    <h3 class="name"><code>initialize</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/BaseStructure.html#method_initialize">BaseStructure</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Method called after the loading of the component
+    </div>
+
+
+
+
+</div>
+<div id="method_insertElement" class="method item">
+    <h3 class="name"><code>insertElement</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>category</code>
+                </li>
+                <li class="arg">
+                        <code>element</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Inserts an element into the structure.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">category</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                    <div class="param-description">
+                        <p>Category of the object (ex: &quot;walls&quot;, &quot;points&quot;,...).</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">element</code>
+                        <span class="type"><a href="../classes/BaseStructure.html" class="crosslink">BaseStructure</a></span>
+
+
+                    <div class="param-description">
+                        <p>Element to insert.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_isDirty" class="method item">
+    <h3 class="name"><code>isDirty</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Checks if the floor geometry has been dirtied.</p>
+
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>:
+                    <p>The geometry status.</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_prepareWallStructure" class="method item private">
+    <h3 class="name"><code>prepareWallStructure</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>a</code>
+                </li>
+                <li class="arg">
+                        <code>b</code>
+                </li>
+                <li class="arg">
+                        <code>options</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+        <span class="returns-inline">
+            <span class="type"><a href="../classes/WallStructure.html" class="crosslink">WallStructure</a></span>
+        </span>
+
+
+        <span class="flag private">private</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Instanciates a WallStructure with the desired parameters</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">a</code>
+                        <span class="type">BABYLON.Vector2</span>
+
+
+                    <div class="param-description">
+                        <p>The first point, must have x and y attribute ( BABYLON.Vector2 for exemple ).</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">b</code>
+                        <span class="type">BABYLON.Vector2</span>
+
+
+                    <div class="param-description">
+                        <p>The second point, must have x and y attribute ( BABYLON.Vector2 for exemple ).</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">options</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+
+
+                    <div class="param-description">
+                        <p>Set of options</p>
+
+                    </div>
+
+                        <ul class="params-list">
+                            <li class="param">
+                                    <code class="param-name">height</code>
+                                    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+                                <div class="param-description">
+                                    <p>The height of the walls</p>
+
+                                </div>
+
+                            </li>
+                            <li class="param">
+                                    <code class="param-name">tickness</code>
+                                    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+                                <div class="param-description">
+                                    <p>The thickness of the walls</p>
+
+                                </div>
+
+                            </li>
+                        </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="../classes/WallStructure.html" class="crosslink">WallStructure</a></span>:
+                    <p>The wall structure</p>
+
+            </div>
+        </div>
+
+
+</div>
+<div id="method_reindexElements" class="method item">
+    <h3 class="name"><code>reindexElements</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>collection</code>
+                </li>
+                <li class="arg">
+                        <code>start</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Reindexes a collection.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">collection</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object[]</a></span>
+
+
+                    <div class="param-description">
+                        <p>The collection.</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">start</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+                    <div class="param-description">
+                        <p>The start index.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_removeAllWalls" class="method item">
+    <h3 class="name"><code>removeAllWalls</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Removes all the walls of the floor</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_removeElement" class="method item">
+    <h3 class="name"><code>removeElement</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>category</code>
+                </li>
+                <li class="arg">
+                        <code>element</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Deletes an element from a category in the structure.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">category</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                    <div class="param-description">
+                        <p>Category of the element (ex: &quot;walls&quot;, &quot;points&quot;,...).</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">element</code>
+                        <span class="type"><a href="../classes/BaseStructure.html" class="crosslink">BaseStructure</a></span>
+
+
+                    <div class="param-description">
+                        <p>Element to delete.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_removeElements" class="method item">
+    <h3 class="name"><code>removeElements</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>category</code>
+                </li>
+                <li class="arg">
+                        <code>elements</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Replaces all the elements of a category.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">category</code>
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+                    <div class="param-description">
+                        <p>Category of the element (ex: &quot;walls&quot;, &quot;points&quot;,...).</p>
+
+                    </div>
+
+                </li>
+                <li class="param">
+                        <code class="param-name">elements</code>
+                        <span class="type"><a href="../classes/BaseStructure.html" class="crosslink">BaseStructure[]</a></span>
+
+
+                    <div class="param-description">
+                        <p>Array of elements to insert.</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+<div id="method_serialize" class="method item inherited">
+    <h3 class="name"><code>serialize</code></h3>
+
+        <span class="paren">()</span>
+
+        <span class="returns-inline">
+            <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>
+        </span>
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/BaseStructure.html#method_serialize">BaseStructure</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Serializes the object (to JSON)
+    </div>
+
+
+        <div class="returns">
+            <h4>Returns:</h4>
+
+            <div class="returns-description">
+                        <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" class="crosslink external" target="_blank">Object</a></span>:
+                    The serialization result, null if nothing is serialized
+            </div>
+        </div>
+
+
+</div>
+<div id="method_tidy" class="method item">
+    <h3 class="name"><code>tidy</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Signals that the floor geometry has been tidied, and no longer needs to be updated.</p>
+
+    </div>
+
+
+
+
+</div>
+<div id="method_update" class="method item inherited">
+    <h3 class="name"><code>update</code></h3>
+
+        <span class="paren">()</span>
+
+
+
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/BaseStructure.html#method_update">BaseStructure</a>:
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        Generic update method, must be overridden.
+    </div>
+
+
+
+
+</div>
+<div id="method_updateReferences" class="method item">
+    <h3 class="name"><code>updateReferences</code></h3>
+
+        <div class="args">
+            <span class="paren">(</span><ul class="args-list inline commas">
+                <li class="arg">
+                        <code>structure</code>
+                </li>
+            </ul><span class="paren">)</span>
+        </div>
+
+
+
+
+
+
+
+
+    <div class="meta">
+            <p>Inherited from
+            <a href="../classes/BaseStructure.html#method_updateReferences">
+                BaseStructure
+            </a>
+        </p>
+
+
+
+    </div>
+
+    <div class="description">
+        <p>Update the floor's walls' parents after deserialization.</p>
+
+    </div>
+
+        <div class="params">
+            <h4>Parameters:</h4>
+
+            <ul class="params-list">
+                <li class="param">
+                        <code class="param-name">structure</code>
+                        <span class="type"><a href="../classes/BaseStructure.html" class="crosslink">BaseStructure</a></span>
+
+
+                    <div class="param-description">
+                        <p>deserialized FloorStructure</p>
+
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+
+
+</div>
+            </div>
+
+            <div id="properties" class="api-class-tabpanel">
+                <h2 class="off-left">Properties</h2>
+
+<div id="property_dirtyGeometry" class="property item">
+    <h3 class="name"><code>dirtyGeometry</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>This flag signals if the geometry of the floor has been dirtied by some component.
+Components should read this with <code>isDirty()</code> and update their logic if the floor is dirty.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_elevation" class="property item">
+    <h3 class="name"><code>elevation</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Floor elevation. Represents the &quot;y&quot; coordinate of the bottom of the floor.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 0</p>
+
+
+</div>
+<div id="property_externalRooms" class="property item">
+    <h3 class="name"><code>externalRooms</code></h3>
+    <span class="type"><a href="../classes/RoomStructure.html" class="crosslink">RoomStructure[]</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Array of RoomStructure referenced in this floor. These rooms are external, see Wiki for more info.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_extraPanes" class="property item">
+    <h3 class="name"><code>extraPanes</code></h3>
+    <span class="type"><a href="../classes/WallPane3D.html" class="crosslink">WallPane3D[]</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Extra wall panes, needed for the decoration of the house to be complete. Act as fillers.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_height" class="property item">
+    <h3 class="name"><code>height</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Floor height. Represents the height difference between the top (ceiling) and the bottom of the floor.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> 250</p>
+
+
+</div>
+<div id="property_hoppers" class="property item">
+    <h3 class="name"><code>hoppers</code></h3>
+    <span class="type"><a href="../classes/HopperStructure.html" class="crosslink">HopperStructure[]</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Array of HopperStructure referenced in this floor.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_id" class="property item inherited">
+    <h3 class="name"><code>id</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number" class="crosslink external" target="_blank">Number</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/BaseStructure.html#property_id">BaseStructure</a>:
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        Unique ID for the structure set up automatically
+    </div>
+
+
+
+</div>
+<div id="property_internalRooms" class="property item">
+    <h3 class="name"><code>internalRooms</code></h3>
+    <span class="type"><a href="../classes/RoomStructure.html" class="crosslink">RoomStructure[]</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Array of RoomStructure referenced in this floor. These rooms are internal, see Wiki for more info.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_label" class="property item">
+    <h3 class="name"><code>label</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Floor label, chosen by the user.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_lockElevation" class="property item">
+    <h3 class="name"><code>lockElevation</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean" class="crosslink external" target="_blank">Boolean</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Lock floor elevation. When true, prevents auto modification of this floor's elevation.</p>
+
+    </div>
+
+        <p><strong>Default:</strong> false</p>
+
+
+</div>
+<div id="property_name" class="property item inherited">
+    <h3 class="name"><code>name</code></h3>
+    <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>Inherited from
+                <a href="../classes/BaseStructure.html#property_name">BaseStructure</a>:
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        Structure name
+    </div>
+
+
+
+</div>
+<div id="property_objects" class="property item">
+    <h3 class="name"><code>objects</code></h3>
+    <span class="type">ObjectStrcture</span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Array of ObjectStructure referenced in this floor.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_overtures" class="property item">
+    <h3 class="name"><code>overtures</code></h3>
+    <span class="type"><a href="../classes/OvertureStructure.html" class="crosslink">OvertureStructure[]</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Array of OvertureStructure referenced in this floor.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_points" class="property item">
+    <h3 class="name"><code>points</code></h3>
+    <span class="type"><a href="../classes/PointStructure.html" class="crosslink">PointStructure[]</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Array of PointStructure referenced in this floor.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_roofs" class="property item">
+    <h3 class="name"><code>roofs</code></h3>
+    <span class="type"><a href="../classes/RoofStructure.html" class="crosslink">RoofStructure[]</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Array of RoofStructure referenced in this floor.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_stairways" class="property item">
+    <h3 class="name"><code>stairways</code></h3>
+    <span class="type"><a href="../classes/StairwayStructure.html" class="crosslink">StairwayStructure[]</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Array of StairwayStructure referenced in this floor.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_subSlopeOverture" class="property item">
+    <h3 class="name"><code>subSlopeOverture</code></h3>
+    <span class="type"><a href="../classes/SubSlopeOvertureStructure.html" class="crosslink">SubSlopeOvertureStructure[]</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Array of SubSlopeOvertureStructure referenced in this floor.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_subslopes" class="property item">
+    <h3 class="name"><code>subslopes</code></h3>
+    <span class="type"><a href="../classes/SubSlopeStructure.html" class="crosslink">SubSlopeStructure[]</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Array of SubSlopeStructure referenced in this floor.</p>
+
+    </div>
+
+
+
+</div>
+<div id="property_walls" class="property item">
+    <h3 class="name"><code>walls</code></h3>
+    <span class="type"><a href="../classes/WallStructure.html" class="crosslink">WallStructure[]</a></span>
+
+
+
+
+
+    <div class="meta">
+                <p>
+        </p>
+
+
+    </div>
+
+    <div class="description">
+        <p>Array of WallStructure referenced in this floor.</p>
+
+    </div>
+
+
+
+</div>
+            </div>
+
+
+    </div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>
